@@ -1,7 +1,7 @@
 function Navbar() {
     return(
     <div className="flex justify-between flex-row items-center bg-[#1E2B46] lg:px-18 lg:py-8 md:px-15 md:py-6 px-15 sm:py-4">
-        <span className="font-bold text-4xl text-white font-logo">RiftScholar</span>
+        <a href="#" className="font-bold text-4xl text-white font-logo">RiftScholar</a>
         <ul className="flex flex-row lg:gap-20 md:gap-12 sm:gap-8 ">
             <li><a href="#" className="block py-2 hover:text-[#2FD4FF]">Game Knowledge</a></li>
             <li className="relative group">
