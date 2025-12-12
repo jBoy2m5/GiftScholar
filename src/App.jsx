@@ -1,5 +1,6 @@
 import './App.css'
 import Navbar from './Components/Navbar/Navbar.jsx'
+import {Outlet} from 'react-router-dom'
 
 function App() {
 
@@ -8,7 +9,9 @@ function App() {
   return (
     <div className="font-inter text-white">
       <Navbar />
-      
+      <div className="px-[15%] py-30">
+        <Outlet />
+      </div>
     </div>
   )
 }
