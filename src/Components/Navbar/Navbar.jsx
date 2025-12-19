@@ -35,7 +35,7 @@ function Navbar() {
                 <li><span className="py-2 block hover:text-[#2FD4FF]">Items</span></li>
             </Link>
         </ul>
-        <input className="w-5/12 md:w-3/12 sm:w-2/12 bg-[#121A2A] rounded-xl px-5 py-1" placeholder="🔍︎ Search"></input>
+        <input className="w-5/12 md:w-3/12 sm:w-2/12 max-w-xs bg-[#121A2A] rounded-xl px-5 py-1" placeholder="🔍︎ Search"></input>
     </div>
     )
 }
