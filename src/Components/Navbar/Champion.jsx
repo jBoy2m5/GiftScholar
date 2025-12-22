@@ -55,6 +55,7 @@ function Champion() {
             champimg={champ.img}
             name={champ.name}
             description={champ.description}
+            key={champ.name}
           />
         ))}
       </div>
