@@ -10,6 +10,7 @@ import Items from './Components/Navbar/Items.jsx'
 import Build from './Components/Navbar/Build.jsx'
 import Guide from './Components/Navbar/Guide.jsx'
 import Counter from './Components/Navbar/Counter.jsx'
+import Test from './Components/Navbar/Test.jsx'
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,8 @@ const router = createBrowserRouter([
       {path: "items", element: <Items />},
       {path: "build", element: <Build />},
       {path: "guide", element: <Guide />},
-      {path: "counter", element: <Counter />}
+      {path: "counter", element: <Counter />},
+      {path: "test", element: <Test />}
     ]
   }
 ])

@@ -14,11 +14,13 @@ import ChampionCard from "../../Components/ChampionCard.jsx";
 const roles = [specialist, top, jungle, mid, bot, support];
 
 
-
 function Champion() {
 
   const [role, setRole] = useState(specialist);
-  const filterChampion = (role === specialist) ? championTrait : championTrait.filter((champion) => champion.lane.includes(role));
+  const [search, setSearch] = useState("");
+  const filterRoleChampion = (role === specialist) ? championTrait : championTrait.filter((champion) => champion.lane.includes(role));
+  const filterSearchChampion = filterRoleChampion.filter((champ) => champ.name.toLowerCase().trim().indexOf(search) === 0);
+
   function updateRole(role) {
     setRole(role);
     console.log("Role Changed");
@@ -28,10 +30,10 @@ function Champion() {
   return (
     <div>
       <div className="mb-15 flex gap-5"> 
-        <input className="w-5/12 sm:w-4/12 max-w-xs bg-[#0D1221] rounded-sm px-5 py-1" placeholder="Search Champion" />
+        <input className="w-5/12 sm:w-4/12 max-w-xs bg-[#0D1221] rounded-sm px-5 py-1" placeholder="Search Champion" value={search} onChange={(e) => setSearch(e.target.value)} />
         <div className="flex">
           {roles.map((r) => (
-            <button key={r} className={`w-15 h-9 flex justify-center items-center border-[rgba(230,234,242,0.16)] border hover:border-white ${
+            <button key={r} className={`w-15 h-9 cursor-pointer flex justify-center items-center border-[rgba(230,234,242,0.16)] border hover:border-white ${
               r === role ? "bg-[#2A2F3A]" : "bg-[#0D1221]" }`}>
               <img src={r} className="w-6" onClick={() => updateRole(r)} />
             </button>
@@ -39,7 +41,7 @@ function Champion() {
         </div>
       </div>
       <div className="flex flex-row gap-10 flex-wrap box-border">
-        {filterChampion.map((champ) => (
+        {filterSearchChampion.map((champ) => (
           <ChampionCard
             to={champ.to}
             lane1={champ.lane[0]}

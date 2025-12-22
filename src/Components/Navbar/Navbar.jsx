@@ -28,6 +28,9 @@ function Navbar() {
                     <Link to={"/counter"}>
                         <span className="w-56 block py-2 px-1 hover:text-[#2FD4FF]">Counter</span>
                     </Link>
+                    <Link to={"/test"}>
+                        <span className="w-56 block py-2 px-1 hover:text-[#2FD4FF]">Test</span>
+                    </Link>
                    
                 </div>
             </li>
