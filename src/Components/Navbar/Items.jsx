@@ -36,8 +36,8 @@ function Items() {
                 onMouseLeave={() => setShow(false)}
                 onMouseMove={(e) => setPosition({x: e.clientX, y: e.clientY})}
                 />
-                <p className="text-sm text-center">Item's name</p>
-                {
+                <p className="text-sm text-center">Doran's Ring</p>
+                {show &&
                 <div className="fixed bg-black px-5 py-5 flex gap-5 w-120"
                 style={{top, left}}
                 ref={itemRef}
@@ -45,7 +45,7 @@ function Items() {
                     <img src={item} className="w-18 rounded-full mb-3 h-18 " /> {/* Icon img */}
                     <div className="w-8/10"> {/* description */}
                         <div className="pb-3 border-b border-[#F2D18B] mb-3">
-                            <h1 className="w-[100%] font-bold text-xl">Doran's Ring</h1>
+                            <h1 className="w-[100%] font-bold text-xl break-word">Doran's Ring</h1>
                             <div className="flex gap-2">
                                 <img src={gold_icon} />
                                 <span>400</span>
@@ -71,9 +71,7 @@ function Items() {
                                 <span className="text-[#7F8AA3]">Basic attacks deal 5 bonus physical damage on-hit against minions.</span>
                             </p>
                         </div>
-
                     </div>
-
                 </div>
                 }
             </div>
