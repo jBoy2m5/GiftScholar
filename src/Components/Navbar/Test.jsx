@@ -1,28 +1,47 @@
-import {useState} from "react";
+import {useState, useRef, useEffect} from "react";
 import {data} from "./Test/Data.jsx";
 
 function Test() { 
+    const [position, setPosition] = useState({x: 0, y: 0})
+    const [show, setShow] = useState(false);
+    const [tableDimension, setTableDimension] = useState({width: 0, height: 0});
+    const stateRef = useRef(null);
 
-    const [search, setSearch] = useState("");
+    useEffect(() => {
+        if (show && stateRef.current) {
+            const width = stateRef.current.getBoundingClientRect().width;
+            const height = stateRef.current.getBoundingClientRect().height;
+            setTableDimension({width, height})
+        }
 
-    const filterName = data.filter((data) => data.first_name.toLowerCase().includes(search));
+    }, [show])
+
+    let left = position.x + 15;
+    let top = position.y + 15;
+
+    if (left + tableDimension.width > window.innerWidth) {
+        left = position.x - tableDimension.width - 15;
+    } 
+
+    if (top + tableDimension.height > window.innerHeight) {
+        top = position.y - tableDimension.height - 15;
+    }
 
     return (
-        <div>
-            <input placeholder="Search" className="bg-white text-black mb-10" value={search} onChange={(e) => setSearch(e.target.value)}></input>
-
-            {filterName.map((data) => (
-                <div className="flex gap-30 mb-15">
-                <p>{data.first_name}</p>
-                <p>{data.last_name}</p>
-                <p>{data.email}</p>
-                <p>{data.gender}</p>
-                <p>{data.ip_address}</p>
+        <div className="group">
+            <button className="px-5 py-10 bg-[#00f]" 
+            onMouseMove={(e) => setPosition({x: e.clientX, y: e.clientY})}
+            onMouseEnter={() => setShow(true)}
+            onMouseLeave={() => setShow(false)}
+            >Hover Me</button>
+            {show &&
+            <div className="px-5 py-10 bg-black fixed"
+            style={{ left, top }}
+            ref={stateRef}
+            >
+                The table showned
             </div>
-            ))}
-
-            {}
-
+}
         </div>
     )
 }
