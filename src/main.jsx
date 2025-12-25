@@ -11,6 +11,10 @@ import Build from './Components/Navbar/Build.jsx'
 import Guide from './Components/Navbar/Guide.jsx'
 import Counter from './Components/Navbar/Counter.jsx'
 import Test from './Components/Navbar/Test.jsx'
+import CoreKnowledge from './Components/GameKnowledge/CoreKnowledge.jsx'
+import RoleSpecific from './Components/GameKnowledge/RoleSpecific.jsx'
+import BeginnerGuide from './Components/GameKnowledge/BeginnerGuide.jsx'
+import GameKnowledgeHome from './Components/GameKnowledge/GameKnowledgeHome.jsx'
 
 const router = createBrowserRouter([
   {
@@ -19,14 +23,22 @@ const router = createBrowserRouter([
     children: [
       {index: true, element: <Home />},
       {path: "champion", element: <Champion />},
-      {path: "gameknowledge", element: <GameKnowledge />},
+      { path: "gameknowledge", 
+        element: <GameKnowledge />,
+        children: [
+          {index: true, element: <GameKnowledgeHome />},
+          {path: "coreknowledge", element: <CoreKnowledge />},
+          {path: "beginnerguide", element: <BeginnerGuide />},
+          {path: "rolespecific", element: <RoleSpecific />}
+        ]
+      },
       {path: "items", element: <Items />},
       {path: "build", element: <Build />},
       {path: "guide", element: <Guide />},
       {path: "counter", element: <Counter />},
-      {path: "test", element: <Test />}
+      {path: "test", element: <Test />},
     ]
-  }
+  },
 ])
 
 createRoot(document.getElementById('root')).render(
