@@ -15,11 +15,11 @@ A League of Legends platform that help players understand the game, learn the fu
 
 ## Solution & Key Features
 How RiftScholar solves these problems?
-- [Game Knowledge](https://rift-scholar.vercel.app/gameknowledge): In this section, player will learn the fundamental, the guide of the game. I hope thanks to this section, the player can have the deeper comprehension of the game. I divided it into three section: Beginer Guide (for newbie), Core Knowledge (universal concepts) and Role-Specific Knowledge (each-role)
+- [Game Knowledge](https://rift-scholar.vercel.app/gameknowledge): In this section, player will learn the fundamental, the guide of the game. I hope thanks to this section, the player can have the deeper comprehension of the game. I divided it into three section: [Beginer Guide](https://rift-scholar.vercel.app/gameknowledge/beginnerguide) (for newbie), [Core Knowledge](https://rift-scholar.vercel.app/gameknowledge/coreknowledge) (universal concepts) and [Role-Specific Knowledge](https://rift-scholar.vercel.app/gameknowledge/rolespecific) (each-role)
 
 - [Items](https://rift-scholar.vercel.app/items): This section covers all items in the game, including their effects, costs, and item categories. Players can learn when and how to use each item effectively, understand situational item choices, and identify which items are best for countering specific champions and strategies.
 
-- [Champion](https://rift-scholar.vercel.app/champion): This section focuses on in-depth champion knowledge. Players can learn each champion’s playstyle, optimal builds, strengths and weaknesses, and how they interact with other champions throughout different stages of the game—early, mid, and late game. It also covers counter-picks and matchup strategies. The section is divided into three parts: Build, Guide, and Counter.
+- [Champion](https://rift-scholar.vercel.app/champion): This section focuses on in-depth champion knowledge. Players can learn each champion’s playstyle, optimal builds, strengths and weaknesses, and how they interact with other champions throughout different stages of the game—early, mid, and late game. It also covers counter-picks and matchup strategies. The section is divided into three parts: [Build](https://rift-scholar.vercel.app/build), [Guide](https://rift-scholar.vercel.app/guide), and [Counter](https://rift-scholar.vercel.app/counter).
 
 ## Tech Stack 
 - **Frontend**: React
