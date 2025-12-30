@@ -29,7 +29,7 @@ import boots from "../item-img/40px-Boots_item.png"
 import swiftnessboot from "../item-img/40px-Boots_of_Swiftness_item.png"
 import ionianboot from "../item-img/40px-Ionian_Boots_of_Lucidity_item.png"
 import mercurytreads from "../item-img/40px-Mercury's_Treads_item.png"
-import steelcapsboot from "../item-img/40px-Mercury's_Treads_item.png"
+import steelcapsboot from "../item-img/40px-Plated_Steelcaps_item.png"
 import sorcererboot from "../item-img/40px-Sorcerer's_Shoes_item.png"
 import symbioticsoles from "../item-img/40px-Symbiotic_Soles_item.png"
 import amplifyingtome from "../item-img/40px-Amplifying_Tome_item.png"
@@ -202,6 +202,7 @@ import yuntal from "../item-img/40px-Yun_Tal_Wildarrows_item.png"
 import zazzak from "../item-img/40px-Zaz'Zak's_Realmspike_item.png"
 import zeke from "../item-img/40px-Zeke's_Convergence_item.png"
 import zhonya from "../item-img/40px-Zhonya's_Hourglass_item.png"
+import synchronizedsouls from "../item-img/40px-Synchronized_Souls_item.png"
 
 import melee from "../role-img/16px-Melee_role.png"
 import ranged from "../role-img/16px-Ranged_role.png"
@@ -669,260 +670,153 @@ const ItemTrait = [
         Limited to 1 Trinket item. Switching to another trinket keeps the current cooldown, if there is any. A player may only have 3 Stealth Wards or Totem Wards on the map at one time.
     </>]]
     },
-    // Avarice Elixir
-    {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
-        <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
-    },
-    // Force Elixir
-    {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
-        <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
-    },
-    // Skille Elixir
-    {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
-        <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
-    },
-    // Herald Eye
-    {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
-        <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
-    },
-    // Magical Boot
-    {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
-        <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
-    },
-    // Biscuit
-    {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
-        <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
-    },
-    // Pyke Cut
-    {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
-        <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
-    },
     // Berserker Boot
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 19,
+        itemImg: berserkerboot, 
+        itemName: "Berserker's Greaves",
+        cost: 1100, 
+        attribute: [["+25 ", "Attack Speed"], ["+45 ", "Movement Speed"]],
+        description: [["Limitations: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
+            Limited to 1 Boots item.
+        </> 
+        ]]
     },
     // Boots
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 20,
+        itemImg: boots, 
+        itemName: "Boots",
+        cost: 300, 
+        attribute: [["+25 ", "Movement Speed"]],
+        description: [["Limitations: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
+            Limited to 1 Boots item.
+        </> 
+        ]]
     },
     // Swiftness Boot
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 21,
+        itemImg: swiftnessboot, 
+        itemName: "Boots of Swiftness",
+        cost: 1000, 
+        attribute: [["+55 ", "Movement Speed"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
+            Unique – Fleetfooted: Gain 25% slow resist.
+        </> 
+        ],["Limitations: ",
+        <>
+            Limited to 1 Boots item.
+        </> 
+        ]]
     },
     // Ionian Boot
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 22,
+        itemImg: ionianboot, 
+        itemName: "Ionian Boots of Lucidity",
+        cost: 900, 
+        attribute: [["+10 ", "Ability Haste"], ["+45 ", "Movement Speed"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+                Unique – Ionian Insight: Gain 10 summoner spell haste.
             </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
+        ],["Limitations: ",
+        <>
+            Limited to 1 Boots item.
+        </> 
+        ]]
     },
     // Mercury Treads
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 23,
+        itemImg: mercurytreads, 
+        itemName: "Mercury's Treads",
+        cost: 1250, 
+        attribute: [["+20 ", "Magic Resistance"], ["+45 ", "Movement Speed"], ["+30% ", "Tenacity"]],
+        description: [["Limitations: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
+            Limited to 1 Boots item.
+        </> 
+        ]]
     },
     // Steelcaps Boot
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 24,
+        itemImg: steelcapsboot, 
+        itemName: "Plated Steelcaps",
+        cost: 1200, 
+        attribute: [["+25 ", "Armor"], ["+45 ", "Movement Speed"]],
+        description: [["Passive:  ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
+            Unique – Plating: Reduces all incoming basic damage by 10% (excluding from turret attacks).
+        </> 
+        ],["Limitations: ",
+        <>
+            Limited to 1 Boots item.
+        </> 
+        ]]
     },
     // Sorcerer Boot
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 25,
+        itemImg: sorcererboot, 
+        itemName: "Sorcerer's Shoes",
+        cost: 1100, 
+        attribute: [["+12 ", "Magic Penetration"], ["+45 ", "Movement Speed"]],
+        description: [["Limitations: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
+            Limited to 1 Boots item.
+        </>
+        ]]
     },
     // Symbiotic Soles 
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 26,
+        itemImg: symbioticsoles, 
+        itemName: "Symbiotic Soles",
+        cost: 900, 
+        attribute: [["+40 ", "Movement Speed"]],
+        description: [["Unique – Synchrony: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Synchrony: Gain 10 bonus <span className="text-white font-bold">movement speed</span>, going on cooldown for 6 seconds upon taking or dealing damage.        </> 
+        ],["Limitations: ",
+        <>
+            Limited to 1 Boots item.
+        </> 
+        ]]
+    },
+
+    // Synchronized Souls
+    {
+        id: 27,
+        itemImg: synchronizedsouls, 
+        itemName: "Synchronized Souls",
+        cost: 900, 
+        attribute: [["+45 ", "Movement Speed"]],
+        description: [["Passive: ",
+        <>
+            Unique – Voidborn: Gain Empowered Recall.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
+        ["Unique – Synchrony: ", 
+        <>
+            Gain 45 bonus <span className="text-white font-bold">movement speed</span>, going on cooldown for 6 seconds upon taking or dealing damage.
+        </>
+        ],
+        ["Limitations: ",
+        <>
+            Limited to 1 Boots item.
+        </> 
+        ],
+        ["Requirements: ",
+        <>
+            Requires completion of the quest for Symbiotic Soles, which transforms into this item afterwards.
+        </>
+        ]]
     },
     // Amplifying Tome
     {
