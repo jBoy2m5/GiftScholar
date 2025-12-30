@@ -1,3 +1,37 @@
+
+// Gold icon 
+{" "}<img src={gold_icon} className="inline" /> {" "}
+
+
+// Item
+{" "}<img src={mejai} className="inline w-4 h-4" /> {" "}
+
+// Melee 
+
+
+// Ranged
+
+
+
+** Color 
+
+// Purple ( Ability Power )
+<span className="text-[#5D3FD3]">ability power</span>
+
+
+// Blue ( Mana )
+<span className="text-[#0096ff]">mana</span>
+
+// Orange ( Physical Damage )
+<span className="text-[#FF5F1F]">physical damage</span>
+
+// Green (Health)
+<span className="text-[#008000]">health</span>
+
+
+
+
+
 smite 
 
 gustwalker's gait buff

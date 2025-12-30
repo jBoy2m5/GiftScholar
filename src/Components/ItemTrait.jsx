@@ -13,7 +13,7 @@ import ironelixir from "../item-img/40px-Elixir_of_Iron_item_Winter.png"
 import sorceryelixir from "../item-img/40px-Elixir_of_Sorcery_item_Winter.png"
 import wrathelixir from "../item-img/40px-Elixir_of_Wrath_item_Winter.png"
 import healthpotion from "../item-img/40px-Health_Potion_item_Winter.png"
-import refillableportion from "../item-img/40px-Refillable_Potion_item_Winter.png"
+import refillablepotion from "../item-img/40px-Refillable_Potion_item_Winter.png"
 import farsight from "../item-img/40px-Farsight_Alteration_item.png"
 import lens from "../item-img/40px-Oracle_Lens_item.png"
 import ward from "../item-img/40px-Stealth_Ward_item.png"
@@ -248,6 +248,10 @@ const ItemTrait = [
                 {" "}<img src={mejai} className="inline w-4 h-4" /> {" "}
                 Mejai's Soulstealer.
             </> 
+        ],["Limitations: ",
+        <>
+            Limited to 1 Glory item
+        </>
         ]]
     },
     // Doran Blade
@@ -261,6 +265,10 @@ const ItemTrait = [
             <>
                 Heal for 2.5% of post-mitigation damage dealt, reduced to 33.3% effectiveness for area of effect and pet damage.
             </> 
+        ],["Limitations: ",
+        <>
+            Limited to 1 Starter item
+        </>
         ]]
     },
     // Doran's Ring
@@ -278,7 +286,11 @@ const ItemTrait = [
     ["Unique – Helping Hand: ", 
         <>
             Basic attacks deal 5 bonus <span className="text-[#FF5F1F]">physical damage</span> on-hit against minions.
-        </>]]
+        </>],["Limitations: ",
+        <>
+            Limited to 1 Starter item
+        </>
+        ]]
     },
 
     // Doran Shield
@@ -296,7 +308,11 @@ const ItemTrait = [
     ["Unique – Helping Hand: ", 
         <>
             Basic attacks deal 5 bonus <span className="text-[#FF5F1F]">physical damage</span> on-hit against minions.
-        </>]]
+        </>],["Limitations: ",
+        <>
+            Limited to 1 Starter item
+        </>
+        ]]
     },
     // Gustwalker
     {
@@ -317,7 +333,19 @@ const ItemTrait = [
     ["Gustwalker's Gait Buff: ", 
         <>
              While in a brush, gain 30% bonus movement speed, decaying over 2 seconds after leaving the brush. Killing a large monster increases this effect to 45% for 2 seconds.
-        </>]]
+        </>],["Limitations: ",
+        <>
+            Limited to 1 Starter item. 
+        </>
+        ],["Role Binding: ",
+        <>
+            Must purchase a Jungle item in order to unlock purchasing any non-consumable item in the shop. Cannot be resold to the shop.
+        </>
+        ],["Requirements: ",
+        <>
+            Can only be purchased if you have smite.
+        </>
+        ]]
     },
     // Mosstomper
     {
@@ -339,7 +367,19 @@ const ItemTrait = [
         <>
             Gain a 180 – 300 (based on level) shield that lasts until broken and refreshes after killing a monster camp or 10 seconds without combat.
         </>
-    ]]
+    ],["Limitations: ",
+        <>
+            Limited to 1 Starter item. 
+        </>
+        ],["Role Binding: ",
+        <>
+            Must purchase a Jungle item in order to unlock purchasing any non-consumable item in the shop. Cannot be resold to the shop.
+        </>
+        ],["Requirements: ",
+        <>
+            Can only be purchased if you have smite.
+        </>
+        ]]
     },
     // Scorchclaw
     {
@@ -361,7 +401,19 @@ const ItemTrait = [
         <>
             Gain 3 Ember stacks every 0.5 seconds, up to 100. Killing a large monster grants maximum stacks. When fully stacked, your next damaging basic attack or instance of ability damage against an enemy champion burns them and all enemies within range 250 units of them, dealing bonus true damage equal to ( 4% of the target's maximum health over 4 seconds )and slowing them by 30% decaying over 2 seconds.
         </>
-    ]]
+    ],["Limitations: ",
+        <>
+            Limited to 1 Starter item. 
+        </>
+        ],["Role Binding: ",
+        <>
+            Must purchase a Jungle item in order to unlock purchasing any non-consumable item in the shop. Cannot be resold to the shop.
+        </>
+        ],["Requirements: ",
+        <>
+            Can only be purchased if you have smite.
+        </>
+        ]]
     },
     // Tear
     {
@@ -378,7 +430,11 @@ const ItemTrait = [
     ["Unique – Helping Hand: ", 
         <>
             Basic attacks deal 5 bonus <span className="text-[#FF5F1F]">physical damage</span> on-hit against minions.
-        </>]]
+        </>],
+        ["Limitations: "],
+    <>
+        Limited to 1 manaflow item
+    </>]
     },
     // Atlas
     {
@@ -415,159 +471,202 @@ const ItemTrait = [
     <>
         Receives Lane Swap Detector penalties if detected within the top or middle lanes early in the game.
     </>
-    ]]
+    ],["Limitations: ",
+        <>
+            Limited to 1 Starter item. 
+        </>
+        ]]
     },
     // Control ward
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 10,
+        itemImg: controlward, 
+        itemName: "Control Ward",
+        cost: 75, 
+        attribute: [],
+        description: [["",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Places a visible Control Ward at the target location (600 range), which grants sight over the surrounding 900 units. Cannot have its sight disabled. Its sight also:
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["", 
     <>
-        Hello
-    </>]]
+        • Reveals and disables enemy wards.
+    </>],
+    ["",
+    <>
+        • Reveals enemy stealthed traps.
+    </>
+    ],
+    ["",
+    <>
+        • Reveals camouflaged champions.
+    </>
+    ],
+    ["", 
+    <>
+        It is also exposed to enemies while it is revealing one of the above stealthed units, or granting vision of a Tentacle (Illaoi).
+    </>
+    ],["Limitations: ",
+    <>
+        Can only carry up to 2 Control Wards in the inventory. Limited to 1 Control Ward placed on the map per player.
+    </>
+    ]]
     },
     // Iron elixir
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 11,
+        itemImg: ironelixir, 
+        itemName: "Elixir of Iron",
+        cost: 500, 
+        attribute: [],
+        description: [["Consume: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
+            Grants 300 bonus <span className="text-[#008000]">health</span>, Tenacity, and 15% increased size for 180 seconds. While active, moving leaves behind a path briefly that grants 15% bonus movement <span className="text-white">speed</span> to allied champions within. Can be used while dead.
+        </> 
+        ],["Limitations: ",
+        <>
+            Limited to 1 Elixir effect at a time. Drinking a different Elixir will replace the existing one's effects.
+        </>
+        ],["Requirements: ",
+        <>
+            Level 9 required to purchase.
+        </>
+        ]]
     },
     // Sorcery elixir
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 12,
+        itemImg: sorceryelixir, 
+        itemName: "Elixir of Sorcery",
+        cost: 500, 
+        attribute: [],
+        description: [["Consume: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
+            Grants 50 <span className="text-[#5D3FD3]">ability power</span> and 15 bonus <span className="text-[#0096ff]">mana</span> regeneration for 180 seconds. While active, dealing damage to enemy champions or turrets deals 25 bonus <span className="text-[#F28c28]">true damage</span> (5 second cooldown on each champion, no cooldown against turrets). Can be used while dead.
+        </> 
+        ],["Limitations: ",
+        <>
+            Limited to 1 Elixir effect at a time. Drinking a different Elixir will replace the existing one's effects.
+        </>
+        ],["Requirements: ",
+        <>
+            Level 9 required to purchase.
+        </>
+        ]]
     },
     // Wrath elixir
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 13,
+        itemImg: wrathelixir, 
+        itemName: "Elixir of Wrath",
+        cost: 500, 
+        attribute: [],
+        description: [["Consume: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
+            Grants 30 bonus attack damage and heals for 12% of <span className="text-[#ff5f1f]">physical damage</span> dealt to champions for 180 seconds. The heal is reduced to 33% effectiveness for area damage. Can be used while dead.
+        </> 
+        ],["Limitations: ",
+        <>
+            Limited to 1 Elixir effect at a time. Drinking a different Elixir will replace the existing one's effects.
+        </>
+        ],["Requirements: ",
+        <>
+            Level 9 required to purchase.
+        </>
+        ]]
     },
     // Health Portion
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 14,
+        itemImg: healthpotion, 
+        itemName: "Health Potion",
+        cost: 50, 
+        attribute: [],
+        description: [["Consume: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+             Restores 4 <span className="text-[#008000]">health</span> every 0.5 seconds over 15 seconds, restoring a total of 120 <span className="text-[#008000]">health</span>.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 type of Potion, Limited to 5 at a time.
     </>]]
     },
     // Refillable Portion
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 15,
+        itemImg: refillablepotion, 
+        itemName: "Refillable Potion",
+        cost: 150, 
+        attribute: [],
+        description: [["Consume: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Consumes a charge to  restore 4.166 <span className="text-[#008000]">health</span> every 0.5 seconds over 12 seconds, restoring a total of 100 <span className="text-[#008000]">health</span>.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Passive: ", 
     <>
-        Hello
-    </>]]
+        Unique: Holds charges that refill upon visiting the shop (2 charges).
+    </>],["Limitations: ",
+    <>
+        Limited to 1 type of Potion.
+    </>
+    ]]
     },
     // Farsight
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 16,
+        itemImg: farsight, 
+        itemName: "Farsight Alteration",
+        cost: 0, 
+        attribute: [],
+        description: [["Unique – Trinket: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Places a visible Farsight Ward at the target location that grants sight of the surrounding area, including over terrain and through brush and lasting indefinitely. Also grants sight of the area in a 800 radius for 2 seconds. Upon detecting an enemy champion, the ward will increase its sight radius to 800 units and destroy itself after 3 seconds (198 – 99 (based on average champion level) second cooldown; 4000 range).
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
-    </>]]
+        Limited to 1 Trinket item. Switching to another trinket keeps the current cooldown, if there is any.
+    </>],
+    ["Requirements: ",
+    <>
+        Level 9 required to purchase.
+    </>
+    ]]
     },
     // Lens
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 17,
+        itemImg: lens, 
+        itemName: "Oracle Lens",
+        cost: 0, 
+        attribute: [],
+        description: [["Active: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
+            Consume one charge to summon a Sweeper Drone that escorts you for the next 6 seconds, detecting nearby enemies that are not visible (160 – 100 (based on average champion level) seconds recharge time; 2 charges; 600 – 750 (based on level) range).
+        </> 
+        ],["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Trinket item. Switching to another trinket keeps the current cooldown, if there is any.
     </>]]
     },
     // Ward
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 18,
+        itemImg: ward, 
+        itemName: "Stealth Ward",
+        cost: 0, 
+        attribute: [],
+        description: [["Unique – Trinket: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Consume a charge to place an invisible Totem Ward at the target location, which grants sight of the surrounding area for 90 – 120 (based on average champion level) seconds (210 – 120 (based on average champion level) seconds recharge time; 2 charges; 600 range).
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Trinket item. Switching to another trinket keeps the current cooldown, if there is any. A player may only have 3 Stealth Wards or Totem Wards on the map at one time.
     </>]]
     },
     // Avarice Elixir
