@@ -1521,478 +1521,506 @@ const ItemTrait = [
     },
     // Abyssal
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 89,
+        itemImg: abyssal, 
+        itemName: "Abyssal Mask",
+        cost: 2650, 
+        attribute: [["+15 ", "Ability Haste"], ["+45 ", "Magic Resistance"], ["+350 ", "Health"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Unmake: Enemy champions within 700 units of you become cursed, causing them to receive 12% increased <span className="text-[#6495ED]">magic damage</span> from all sources.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
+        ["Limitations: ",
+            <>
+                Limited to 1 Abyssal Mask.
+            </>
+        ]]
     },
     // Archangel Staff
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 90,
+        itemImg: archangelstaff, 
+        itemName: "Archangel's Staff",
+        cost: 2900, 
+        attribute: [["+70 ", "Ability Power"], ["+25 ", "Ability Haste"], ["+600 ", "Mana"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Awe: Grants <span className="text-[#5D3FD3]">ability power</span> equal to 1% bonus mana. <br />
+            Unique – Manaflow: Grants a charge every 8 seconds, up to 5 charges. Affecting an enemy or ally with an ability consumes a charge to grant 5 <span className="text-[#0096ff]">bonus mana</span>, increased to 10 if they are a champion, up to a maximum of <span className="text-[#0096ff]">bonus mana</span>. <br />
+            Transforms into Seraph's Embrace at 360 <span className="text-[#0096ff]">bonus mana</span>
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Manaflow item. <br />
+        Limited to 1 Lifeline item.
     </>]]
     },
-    // Ardent Censef
+    // Ardent Censer
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 91,
+        itemImg: ardentcenser, 
+        itemName: "Ardent Censer",
+        cost: 2200, 
+        attribute: [["+45 ", "Ability Power"], ["+125% ", "Base Mana Regeneration"], ["+10% ", "Heal and Shield Power"], ["+4% ", "Movement Speed"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Sanctify: Healing or shielding allied champions (excluding yourself) enhances you and them for 6 seconds, granting 25% bonus <span className="text-[#FFFAA0]">attack speed</span> and 20 bonus magic damage on-hit on basic attacks.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Ardent Censer.
     </>]]
     },
     // Axiomarc
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 92,
+        itemImg: axiomarc, 
+        itemName: "Axiom Arc",
+        cost: 2750, 
+        attribute: [["+55 ", "Attack Damage"], ["+20 ", "Ability Haste"], ["+18 ", "Lethality"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Flux: Scoring a An icon representing the keyword Takedown takedown against an enemy champion within 3 seconds of damaging them refunds 15% <span className="text-[#FF5F1F]">(+ 0.15% per 1 Lethality)</span> of your ultimate ability's total cooldown.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations ", 
     <>
-        Hello
+        Limited to 1 Axiom Arc
     </>]]
     },
     // Banshee
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 93,
+        itemImg: banshee, 
+        itemName: "Banshee's Veil",
+        cost: 3000, 
+        attribute: [["+105 ", "Ability Power"], ["+40 ", "Magic Resistance"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Annul: Grants a spell shield that blocks the next hostile ability (40 second cooldown, timer restarts upon taking damage from champions).
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Annul item.
     </>]]
     },
     // Black Cleaver
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 94,
+        itemImg: blackcleaver, 
+        itemName: "Black Cleaver",
+        cost: 3000, 
+        attribute: [["+40 ", "Attack Damage"], ["+20 ", "Ability Haste"], ["+400 ", "Health"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Carve: Dealing <span className="text-[#FF5F1F]">physical damage</span> to an enemy champion applies a stack of Carve for 6 seconds, stacking up to 5 times. Each stack inflicts 6% armor reduction, up to 30% at 5 stacks. <br />
+            Unique – Fervor: Dealing <span className="text-[#FF5F1F]">physical damage</span> grants you 20 bonus <span className="text-white font-bold">movement speed</span> for 2 seconds.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Fatality item.
     </>]]
     },
     // Black Fire
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 95,
+        itemImg: blackfire, 
+        itemName: "Blackfire Torch",
+        cost: 2800, 
+        attribute: [["+80 ", "Ability Power"], ["+20 ", "Ability Haste"], ["+600 ", "Mana"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Baleful Blaze: Dealing ability damage burns enemies, causing them to take 10 (+ 1% <span className="text-[#5D3FD3]">AP</span>) <span className="text-[#6495ED]">magic damage</span> every 0.5 seconds over 3 seconds, for a total of 60 (+ 6% <span className="text-[#5D3FD3]">AP</span>). Against monsters, the burn deals 10 <span className="text-[#6495ED]">bonus magic damage</span> per tick, dealing a total of 20 (+ 1% <span className="text-[#5D3FD3]">AP</span>) <span className="text-[#6495ED]">magic damage</span> per tick for up to 120 (+ 6% <span className="text-[#5D3FD3]">AP</span>). <br />
+            Unique – Blackfire: For each champion, epic monster, and large monster afflicted with Baleful Blaze's burn, increase your <span className="text-[#5D3FD3]">ability power</span> by 4%.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Blackfire Torch.
     </>]]
     },
     // Blade Ruined King
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 96,
+        itemImg: bladeruinedking, 
+        itemName: "Blade of the Ruined King",
+        cost: 3200, 
+        attribute: [["+40 ", "Attack Damage"], ["+90 ", "Health"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
+            Unique – Mist's Edge: Basic attacks deal bonus <span className="text-[#FF5F1F]">physical damage</span> on-hit equal to (<img src={melee} className="inline w-4 h-4" /> 9% / <img src={ranged} className="inline w-4 h-4" /> 6%) of the target's current health, with a maximum of 100 against minions and monsters. <br />
+            Unique – Clawing Shadows: Basic attacks on-hit against enemy champions apply a stack for 6 seconds, stacking up to 3 times. The third stack consumes them all to slow the target by 30% for 1 second (15 second cooldown).
+        </> 
+        ]]
     },
     // Blood Letter
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 97,
+        itemImg: bloodletter, 
+        itemName: "Bloodletter's Curse",
+        cost: 2900, 
+        attribute: [["+65 ", "Ability Power"], ["+15 ", "Ability Haste"], ["+400 ", "Health"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Vile Decay: Dealing <span className="text-[#6495ED]">magic damage</span> to an enemy champion with a champion ability applies a stack of Vile Decay to them for 6 seconds, stacking up to 4 times and up to once per basic attack or ability per cast instance every 0.3 seconds. Each stack inflicts 7.5% magic resistance reduction, up to 30% at 4 stacks.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Blight Item
     </>]]
     },
     // Blood Song
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
+        id: 98,
+        itemImg: bloodsong, 
+        itemName: "Bloodsong",
         cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        attribute: [["+200 ", "Health"], ["+75% ", "Base Health Regeneration"], ["+75% ", "Base Mana Regeneration"], [<>+ <img src={gold_icon} className="inline" /> 5 </>, "per 10 seconds"]],
+        description: [["Active: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Ward: Consumes a charge to place a Stealth Ward at the target location, which grants sight of the surrounding area. Charges refill upon visiting the shop (4 charges; 600 range).
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Passive: ", 
     <>
-        Hello
-    </>]]
+        Unique – Spellblade: After using an ability, your next basic attack within 10 seconds deals 100% base AD bonus <span className="text-[#FF5F1F]">physical damage</span> on-hit. If the target is a champion, inflict them with Expose Weakness for 4 seconds, causing them to take (<img src={melee} className="inline w-4 h-4" /> 8% / <img src={ranged} className="inline w-4 h-4" /> 5%) increased damage from all sources (1.5 second cooldown, starts after using the empowered attack). <br />
+        Unique: Receives diminishing gold from excessive minion kills.
+    </>],
+    ["Limitations: ",
+        <>
+            Limited to 1 Support / Jungle item. <br />
+            Limited to 1 Spellblade item.
+        </>
+    ],
+    ["Requirements: ",
+        <>
+            Requires completion of the support quest for Runic Compass, which transforms into Bounty of Worlds afterwards to allow you to upgrade into this item for free.
+        </>
+    ]]
     },
     // Blood Thirster
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 99,
+        itemImg: bloodthirster, 
+        itemName: "Bloodthirster",
+        cost: 3400, 
+        attribute: [["+80 ", "Attack Damage"], ["+15% ", "Life Steal"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Ichorshield: Convert the healing received from life steal in excess of maximum <span className="text-[#008000]">health</span> into a shield for up to 165 – 315 (based on level), which lasts until destroyed.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Bloodthirster.
     </>]]
     },
     // Bounty World
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
+        id: 100,
+        itemImg: bountyworld, 
+        itemName: "Bounty of Worlds",
         cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        attribute: [["+200 ", "Health"], ["+75% ", "Base Health Regeneration"], ["+75% ", "Base Mana Regeneration"], [<>+ <img src={gold_icon} className="inline" /> 5 </>, "per 10 seconds"]],
+        description: [["Active: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Ward: Consumes a charge to place a Stealth Ward at the target location, which grants sight of the surrounding area. Charges refill upon visiting the shop (4 charges; 600 range).
+        </> 
+        ],["Passive: ",
+        <>
+            Unique – Upgrade: You have completed the support quest and can now upgrade this item, Bounty of Worlds, for free into Bloodsong, Celestial Opposition, Dream Maker, Solstice Sleigh, or Zaz'Zak's Realmspike by selecting one of them from a custom menu in the HUD or the shop. The upgrade can be done outside the shop using the menu. <br />
+            Unique: Receives diminishing gold from excessive minion kills.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
-    </>]]
+        Limited to 1 Support / Jungle item.
+    </>],
+    ["Requirements: ",
+        <>
+            Requires completion of the support quest for Runic Compass, which transforms into this item afterwards to grant you access to the Upgrade effect.
+        </>
+    ]]
     },
     // Celestial Opposition
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
+        id: 101,
+        itemImg: celestialopposition, 
+        itemName: "Celestial Opposition",
         cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        attribute: [["+200 ", "Health"], ["+75% ", "Base Health Regeneration"], ["+75% ", "Base Mana Regeneration"], [<>+ <img src={gold_icon} className="inline" /> 5 </>, "per 10 seconds"]],
+        description: [["Active: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Ward: Consumes a charge to place a Stealth Ward at the target location, which grants sight of the surrounding area. Charges refill upon visiting the shop (4 charges; 600 range).
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Passive: ", 
     <>
-        Hello
-    </>]]
+        Unique – Blessing of the Mountain: Become Blessed to reduce incoming champion damage by (<img src={melee} className="inline w-4 h-4" /> 35% / <img src={ranged} className="inline w-4 h-4" /> 25%), lingering for 2 seconds after taking damage from a champion. After the linger ends, you lose Blessed to unleash a shockwave around you that An icon representing the keyword Slow slows enemies within 500 units by 50% for 1.5 seconds (18 second cooldown, timer restarts upon taking damage from champions). <br/>
+        Unique: Receives diminishing gold from excessive minion kills.
+    </>],["Limitations: ", "Limited to 1 Support / Jungle item."],["Requirements: ", "Requires completion of the support quest for Runic Compass, which transforms into Bounty of Worlds afterwards to allow you to upgrade into this item for free."]]
     },
     // Chempunk
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 102,
+        itemImg: chempunk, 
+        itemName: "Chempunk Chainsword",
+        cost: 3100, 
+        attribute: [["+45 ", "Attack Damage"], ["+15 ", "Ability Haste"], ["+450 ", "Health"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Hackshorn: Dealing <span className="text-[#FF5F1F]">physical damage</span> to enemy champions inflicts them with Grievous Wounds for 3 seconds.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Chempunk Chainsword.
     </>]]
     },
     // Cosmic Drive
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 103,
+        itemImg: cosmicdrive, 
+        itemName: "Cosmic Drive",
+        cost: 3000, 
+        attribute: [["+70 ", "Ability Power"], ["+25 ", "Ability Haste"], ["+350 ", "Health"], ["+4 ", "Movement Speed"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
+            Unique – Spelldance: Dealing <span className="text-[#6495ED]">magic</span> or <span className="text-[#F28c28]">true</span> damage to an enemy champion grants you 20 bonus <span className="text-white font-bold">movement speed</span> for 4 seconds.
+        </> 
+        ]]
     },
     // Crypt Bloom
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 104,
+        itemImg: cryptbloom, 
+        itemName: "Cryptbloom",
+        cost: 3000, 
+        attribute: [["+75 ", "Ability Power"], ["+20 ", "Ability Haste"], ["+30% ", "Magic Penetration"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
+            Unique – Life From Death: Scoring a takedown against an enemy champion while alive and within 3 seconds of damaging them summons a nova that radiates from the location of their death over 1.75 seconds, healing you and allied champions hit for 100 (+ 20% <span className="text-[#5D3FD3]">AP</span>) (60 second cooldown).
+        </> 
+        ]]
     },
     // Dawn Core
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 105,
+        itemImg: dawncore, 
+        itemName: "Dawncore",
+        cost: 2500, 
+        attribute: [["+45 ", "Ability Power"], ["+100% ", "Base Mana Regeneration"], ["+16% ", "Heal and Shield Power"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – First Light: Gain 2% <span className="text-[#008000]">heal</span> and shield power and 10 <span className="text-[#5D3FD3]">ability power</span> for every additional 100% base <span className="text-[#0096ff]">mana regeneration</span>.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Dawncore.
     </>]]
     },
     // Deadman Plate
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 106,
+        itemImg: deadmanplate, 
+        itemName: "Dead Man's Plate",
+        cost: 1900, 
+        attribute: [["+55 ", "Armor"], ["+350 ", "Health"], ["4% ", "Movement Speed"]],
         description: [["Unique – Drain: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Shipwrecker: While moving, generates 7 stacks of Momentum every 0.25 seconds, granting up to 20 bonus <span className="text-white font-bold">movement speed</span> at 100 stacks after 3.75 seconds of moving. Basic attacks consume all stacks to deal 0 – 40 (based on Momentum) (+ 0% – 100% (based on Momentum) base AD) bonus <span className="text-[#FF5F1F]">physical damage</span> on-hit. <br />
+            Unique – Unsinkable: Gain 15% slow resist.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Momentum item.
     </>]]
     },
     // Death Dance
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 107,
+        itemImg: deathdance, 
+        itemName: "Death's Dance",
+        cost: 3300, 
+        attribute: [["+60 ", "Attack Damage"], ["+15 ", "Ability Haste"], ["+50 ", "Armor"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Ignore Pain: Reduces (<img src={melee} className="inline w-4 h-4" /> 30% / <img src={ranged} className="inline w-4 h-4" /> 10%) of all post-mitigation <span className="text-[#FF5F1F]">physical</span> and <span className="text-[#6495ED]">magic</span> damage received and instead stores the damage to successively take it as <span className="text-[#F28c28]">true damage</span> over 3 seconds, dealing a third of the stored damage each second. <br />
+            Unique – Defy: If an enemy champion dies within 3 seconds of you damaging them, removes Ignore Pain's remaining stored damage and heals you for 75% <span className="text-[#F28c28]">bonus AD</span> over 2 seconds.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Death's Dance.
     </>]]
     },
     // Dream Maker
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
+        id: 108,
+        itemImg: dreammaker, 
+        itemName: "Dream Maker",
         cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        attribute: [["+200 ", "Health"], ["+75% ", "Base Health Regeneration"], ["+75% ", "Base Mana Regeneration"], [<>+ <img src={gold_icon} className="inline" /> 5 </>, "per 10 seconds"]],
+        description: [["Active: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Ward: Consumes a charge to place a Stealth Ward at the target location, which grants sight of the surrounding area. Charges refill upon visiting the shop (4 charges; 600 range).
+        </> 
+        ], ["Passive: ",
+        <>
+            Unique – Dream Maker: Every 8 seconds, you gain a Blue Dream Bubble and a Purple Dream Bubble. Granting a heal or shield to an allied champion (excluding yourself) causes you to blow both of your Dream Bubbles to them, empowering them for 3 seconds. The Blue Bubble reduces the next instance of non-minion damage they take by 75 – 255 (based on your level) and the Purple Bubble grants them 50 – 170 (based on your level) bonus <span className="text-[#6495ED]">magic damage</span> on-hit on their next basic attack. <br />
+            Unique: Receives diminishing gold from excessive minion kills.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
-    </>]]
+        Limited to 1 Support / Jungle item.
+    </>],
+    ["Requirements: ",
+        <>
+            Requires completion of the support quest for Runic Compass, which transforms into this item afterwards to grant you access to the Upgrade effect.
+        </>
+    ]]
     },
     // Echohelia
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 109,
+        itemImg: echohelia, 
+        itemName: "Echoes of Helia",
+        cost: 2200, 
+        attribute: [["+35 ", "Ability Power"], ["+20 ", "Ability Haste"], ["+200 ", "Health"], ["+125% ", "Base Mana Regeneration"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Soul Siphon: Damaging an enemy champion with a basic attack or ability damage grants a Soul Shard, up to 2. Healing or shielding an allied champion (excluding yourself) consumes all Soul Shards to heal them for 65 per shard and deal 50 <span className="text-[#6495ED]">magic damage</span> per shard to the nearest enemy champion within 1100 units of the ally.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Echoes of Helia.
     </>]]
     },
     // Eclipse
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 110,
+        itemImg: eclipse, 
+        itemName: "Eclipse",
+        cost: 2900, 
+        attribute: [["+60 ", "Attack Damage"], ["+15 ", "Ability Haste"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Ever Rising Moon: Damaging basic attacks, abilities, item effects, and summoner spells, as well as the application of crowd control and damage over time effects, generate stacks against enemy champions, up to one per attack or cast per champion. Applying 2 stacks to a champion within a 2 second period deals bonus <span className="text-[#FF5F1F]">physical damage</span> to them equal to (<img src={melee} className="inline w-4 h-4" /> 6% / <img src={ranged} className="inline w-4 h-4" /> 4%) of target's maximum <span className="text-[#008000]">health</span> and grants you a shield for (<img src={melee} className="inline w-4 h-4" /> 160 / <img src={ranged} className="inline w-4 h-4" /> 80) (+ (<img src={melee} className="inline w-4 h-4" /> 40% / <img src={ranged} className="inline w-4 h-4" /> 20%) bonus <span className="text-[#FF5F1F]">AD</span>) for 2 seconds (6 second cooldown).
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Eclipse.
     </>]]
     },
     // Edge of Night 
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 111,
+        itemImg: edgeofnight, 
+        itemName: "Edge of Night",
+        cost: 3000, 
+        attribute: [["+50 ", "Attack Damage"], ["+15 ", "Lethality"], ["+250 ", "Health"]],
         description: [["Unique – Drain: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Annul: Grants a spell shield that blocks the next hostile ability (40 second cooldown, timer restarts upon taking damage from champions).
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Annul item.
     </>]]
     },
     // Essence Reaver
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 112,
+        itemImg: essencereaver, 
+        itemName: "Essence Reaver",
+        cost: 2900, 
+        attribute: [["+60 ", "Attack Damage"], ["+15 ", "Ability Haste"], ["+25% ", "Critical Strike Chance"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Essence Drain: Basic attacks on-hit restore 15 (+ 10% bonus <span className="text-[#F28c28]">AD</span>) <span className="text-[#0096ff]">mana</span>.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Essence Reaver.
     </>]]
     },
     // Hexplate
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 113,
+        itemImg: hexplate, 
+        itemName: "Experimental Hexplate",
+        cost: 3000, 
+        attribute: [["+40 ", "Attack Damage"], ["+20% ", "Attack Speed"], ["+450 ", "Health"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
-        ],
-    ["Unique – Helping Hand: ", 
-    <>
-        Hello
-    </>]]
+            Unique – Hexcharged: Gain 30 ultimate haste. <br />
+            Unique – Overdrive: Upon casting your ultimate ability, enter Overdrive to gain 50% bonus <span className="text-[#FFFAA0]">attack speed</span> and 20% bonus <span className="text-white font-bold">movement speed</span> for 8 seconds (30 second cooldown, starts on ultimate cast).
+        </> 
+        ]]
     },
     // Fimbulwinter
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 114,
+        itemImg: fimbulwinter, 
+        itemName: "Fimbulwinter",
+        cost: 2400, 
+        attribute: [["+15 ", "Ability Haste"], ["+550 ", "Health"], ["+860 ", "Mana"]],
         description: [["Unique – Drain: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Awe: Grants bonus <span className="text-[#008000]">health</span> equal to 15% bonus <span className="text-[#0096ff]">mana</span>. <br />
+            Unique – Everlasting: Immobilizing, or slowing if you are <img src={melee} className="inline w-4 h-4" /> melee, an enemy champion grants a 100 (+ 4.5% current mana) shield for 3 seconds (8 second cooldown). The shield's strength is increased by 80% if there is more than one enemy champion within range 1200 units.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Manaflow item.
     </>]]
     },
     // Force Nature
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 115,
+        itemImg: forcenature, 
+        itemName: "Force of Nature",
+        cost: 2800, 
+        attribute: [["+55 ", "Magic Resistance"], ["+400 ", "Health"], ["+4% ", "Movement Speed"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Steadfast: Taking <span className="text-[#6495ED]">magic damage</span> from champions generates a stack of Steadfast for 7 seconds, stacking up to 8 times with the duration refreshing on subsequent <span className="text-[#6495ED]">magic damage</span> from them and whenever dealing damage to them. Becoming immobilized by an enemy champion generates 2 stacks and also refreshes the duration. Once per cast instance, each incoming basic attack, ability, or item effect can only generate 1 stack of Steadfast from their damage every 1 second. At maximum stacks, gain 70 bonus <span className="text-[#00ffff]">magic resistance</span> and 6% bonus <span className="text-white font-bold">movement speed</span>.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Force of Nature.
     </>]]
     },
     // Frozen Heart
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Unique – Drain: ",
+        id: 116,
+        itemImg: frozenheart, 
+        itemName: "Frozen Heart",
+        cost: 2500, 
+        attribute: [["+20 ", "Ability Haste"], ["+75 ", "Armor"], ["+400 ", "Mana"]],
+        description: [["Passive: ",
         <>
-                Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-            </> 
+            Unique – Winter's Caress: Cripples the <span className="text-[#FFFAA0]">attack speed</span> of enemy champions within 700 units by 20%.
+        </> 
         ],
-    ["Unique – Helping Hand: ", 
+    ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Frozen Heart.
     </>]]
     },
     // Guardian Angel
