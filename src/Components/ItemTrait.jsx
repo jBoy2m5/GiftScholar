@@ -17,13 +17,6 @@ import refillablepotion from "../item-img/40px-Refillable_Potion_item_Winter.png
 import farsight from "../item-img/40px-Farsight_Alteration_item.png"
 import lens from "../item-img/40px-Oracle_Lens_item.png"
 import ward from "../item-img/40px-Stealth_Ward_item.png"
-import avariceelixir from "../item-img/40px-Elixir_of_Avarice_item.png"
-import forceelixir from "../item-img/40px-Elixir_of_Force_item.png"
-import skillelixir from "../item-img/40px-Ichor_of_Illumination_item.png"
-import heraldeye from "../item-img/40px-Eye_of_the_Herald_item.png"
-import magicalboot from "../item-img/40px-Slightly_Magical_Boots_item.png"
-import biscuit from "../item-img/40px-Total_Biscuit_of_Everlasting_Will_item_Winter.png"
-import pykecut from "../item-img/40px-Your_Cut_item.png"
 import berserkerboot from "../item-img/40px-Berserker's_Greaves_item.png"
 import boots from "../item-img/40px-Boots_item.png"
 import swiftnessboot from "../item-img/40px-Boots_of_Swiftness_item.png"
@@ -69,7 +62,6 @@ import hexdrinker from "../item-img/40px-Hexdrinker_item.png"
 import hextechalternator from "../item-img/40px-Hextech_Alternator_item.png"
 import kindlegem from "../item-img/40px-Kindlegem_item.png"
 import lastwhisper from "../item-img/40px-Last_Whisper_item.png"
-import lifeline from "../item-img/40px-Lifeline_item.png"
 import lostchapter from "../item-img/40px-Lost_Chapter_item.png"
 import negatroncloak from "../item-img/40px-Negatron_Cloak_item.png"
 import noonquiver from "../item-img/40px-Noonquiver_item.png"
@@ -175,7 +167,6 @@ import shadowflame from "../item-img/40px-Shadowflame_item.png"
 import shurelya from "../item-img/40px-Shurelya's_Battlesong_item.png"
 import solstice from "../item-img/40px-Solstice_Sleigh_item.png"
 import shojin from "../item-img/40px-Spear_of_Shojin_item.png"
-import spectral from "../item-img/40px-Spectral_Cutlass_item.png"
 import spiritvisage from "../item-img/spirit_visage.png"
 import flowingwater from "../item-img/40px-Staff_of_Flowing_Water_item.png"
 import statikk from "../item-img/40px-Statikk_Shiv_item.png"
@@ -3019,451 +3010,483 @@ const ItemTrait = [
 
     // Statikk
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 172,
+        itemImg: statikk, 
+        itemName: "Statikk Shiv",
+        cost: 2700, 
+        attribute: [["+45 ", "Attack Damage"], ["+30% ", "Attack Speed"], ["+4% ", "Movement Speed"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Electrospark: Your next 3 basic attacks on-hit within 8 seconds are empowered to deal 60 <span className="text-[#6495ED]">bonus magic damage</span>, increased to 85 against non-champions. This bounces to the closest target within 500 units, repeating from the new target to strike up to 5 targets (25 – 10 (based on level) second cooldown, starts after using the first empowered attack). <br/><br/>
+            Unique – Electroshock: Scoring a takedown against an enemy champion within 3 seconds of damaging them resets Electrospark's cooldown.
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Statikk Shiv.
     </>]]
     },
 
     // Sterak
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 173,
+        itemImg: sterak, 
+        itemName: "Sterak's Gage",
+        cost: 3200, 
+        attribute: [["+400 ", "Health"], ["+20% ", "Tenacity"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – The Claws that Catch: Gain <span className="text-[#F28c28]">bonus attack damage</span> equal to 45% base <span className="text-[#F28c28]">AD</span>. <br/><br/>
+            Unique – Lifeline: If you would take damage that would reduce you below 30% of your <span className="text-[#008000]">maximum health</span>, you first gain a shield that absorbs damage equal to 60% of <span className="text-[#008000]">bonus health</span> which decays over 4.5 seconds (90 second cooldown).
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Lifeline item.
     </>]]
     },
 
     // Storm Surge
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 174,
+        itemImg: stormsurge, 
+        itemName: "Stormsurge",
+        cost: 2800, 
+        attribute: [["+90 ", "Ability Power"], ["+15 ", "Magic Penetration"], ["+6% ", "Movement Speed"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Stormraider: Dealing damage to an enemy champion equal to 25% of their <span className="text-[#008000]">maximum health</span> within 2.5 seconds inflicts them with Squall (30 second cooldown, starts on Squall's application). <br/><br/>
+            Unique – Squall: After 2 seconds of having applied Squall, strike the target with lightning, dealing 125 (+ 10% <span className="text-[#5D3FD3]">AP</span>) <span className="text-[#6495ED]">magic damage</span> to them. If the target dies before being struck, they emit an electric field instantly that shocks all enemy champions in a 600 radius, dealing them the same damage.
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Stormsurge.
     </>]]
     },
 
     // Stride Breaker
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Passive: ",
+        id: 175,
+        itemImg: stridebreaker, 
+        itemName: "Stridebreaker",
+        cost: 3300, 
+        attribute: [["+40 ", "Attack Damage"], ["+25% ", "Attack Speed"], ["+450 ", "Health"]],
+        description: [["Active: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Breaking Shockwave: Deal 80% <span className="text-[#FF5F1F]">AD physical damage</span> to enemies in a 450 radius centered around you and slow them by 35% for 3 seconds. For each champion hit, gain 35% bonus <span className="text-white font-bold">movement speed</span> decaying over 3 seconds. Can move while casting (15 second cooldown).
         </> 
         ],
-    ["Limitations: ", 
+    ["Passive: ", 
     <>
-        Hello
-    </>]]
+        Unique – Cleave: Basic attacks on-hit deal (<img src={melee} className="inline w-4 h-4" /> 40% AD / <img src={ranged} className="inline w-4 h-4" /> 20% AD) <span className="text-[#FF5F1F]">physical damage</span> to other enemies in a 350 radius centered around the target.
+    </>], 
+    ["Limitations: ", "Limited to 1 Hydra item."]]
     },
 
     // Sundered Sky
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 176,
+        itemImg: sunderedsky, 
+        itemName: "Sundered Sky",
+        cost: 3100, 
+        attribute: [["+40 ", "Attack Damage"], ["+10 ", "Ability Haste"], ["+400 ", "Health"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Lightshield Strike: Your next basic attack against a champion is empowered to critically strike for 175% damage and heal you for (<img src={melee} className="inline w-4 h-4" /> 100% / <img src={ranged} className="inline w-4 h-4" /> 50%) <span className="text-[#F28c28]">base AD</span> (+ 6% of your <span className="text-[#008000]">missing health</span>) (8 second cooldown per target). Excess healing beyond <span className="text-[#008000]">maximum health</span> is converted to <span className="text-[#008000]">bonus health</span> for 8 seconds.
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Sundered Sky.
     </>]]
     },
 
     // Sunfire
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 177,
+        itemImg: sunfire, 
+        itemName: "Sunfire Aegis",
+        cost: 2700, 
+        attribute: [["+10 ", "Ability Haste"], ["+50 ", "Armor"], ["+350 ", "Health"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Immolate: Taking or dealing damage activates this passive for 3 seconds. Deal 20 (+ 1% <span className="text-[#008000]">bonus health</span>) <span className="text-[#6495ED]">magic damage</span> every second to enemies within 325 (+ 100% bonus size) units, with the damage being increased to 160% against minions and to 200% against monsters. This executes minions that would be killed by one more tick of damage.
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Immolate item.
     </>]]
     },
 
     // Terminus
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 178,
+        itemImg: terminus, 
+        itemName: "Terminus",
+        cost: 3000, 
+        attribute: [["+30 ", "Attack Damage"], ["+35% ", "Attack Speed"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Shadow: Basic attacks deal 30 <span className="text-[#6495ED]">bonus magic damage</span> on-hit. <br/> <br/>
+            Unique – Juxtaposition: Basic attacks on-hit against champions alternate between Light and Dark hits, each one granting a bonus for 5 seconds that stacks up to 3 times. Light hits grant 6 / 7 / 8 (based on level) <span className="text-[#ffff00]">bonus armor</span> and <span className="text-[#00ffff]">bonus magic resistance</span> while Dark hits grant 10% <span className="text-[#C41E3A]">armor penetration</span> and <span className="text-[#FF00FF]">magic penetration</span>, for a total of 18 / 21 / 24 (based on level) bonus resistances and 30% resistances penetration at maximum stacks of each.
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Fatality item. <br/>
+        Limited to 1 Blight item.
     </>]]
     },
 
     // Collector
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 179,
+        itemImg: collector, 
+        itemName: "The Collector",
+        cost: 3000, 
+        attribute: [["+50 ", "Attack Damage"], ["+10 ", "Lethality"], ["+25% ", "Critical Strike Chance"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Death: If you deal post-mitigation damage that would leave a champion below 5% of their <span className="text-[#008000]">maximum health</span>, execute them. <br/><br/>
+            Unique – Taxes: Killing a champion grants you an additional <img src={gold_icon} className="inline" /> 25.
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 The Collector.
     </>]]
     },
 
     // Thornmail
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 180,
+        itemImg: thornmail, 
+        itemName: "Thornmail",
+        cost: 2450, 
+        attribute: [["+75 ", "Armor"], ["+150 ", "Health"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Thorns: When struck by a basic attack on-hit, deal 20 (+ 10% <span className="text-[#ffff00]">bonus armor</span>) <span className="text-[#6495ED]">magic damage</span> to the attacker and, if they are a champion, inflict them with Grievous Wounds for 3 seconds.
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Thornmail.
     </>]]
     },
 
     // Titanic
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Passive: ",
+        id: 181,
+        itemImg: titanic, 
+        itemName: "Titanic Hydra",
+        cost: 3300, 
+        attribute: [["+40 ", "Attack Damage"], ["+600 ", "Health"]],
+        description: [["Active: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Titanic Crescent: Your next basic attack within 10 seconds empowers Cleave to deal (<img src={melee} className="inline w-4 h-4" /> 4% / <img src={ranged} className="inline w-4 h-4" /> 2%) <span className="text-[#008000]">maximum health</span> <span className="text-[#FF5F1F]">bonus physical damage</span> to the primary target and (<img src={melee} className="inline w-4 h-4" /> 9% / <img src={ranged} className="inline w-4 h-4" /> 4.5%) <span className="text-[#008000]">maximum health</span> <span className="text-[#FF5F1F]">physical damage</span> to secondary targets (10 second cooldown, starts after using the empowered attack). <br/>
+            Titanic Crescent resets the user's basic attack timer.
         </> 
         ],
-    ["Limitations: ", 
+    ["Passive: ", 
     <>
-        Hello
+        Unique – Cleave: Basic attacks on-hit deal (<img src={melee} className="inline w-4 h-4" /> 1% / <img src={ranged} className="inline w-4 h-4" /> 0.5%) <span className="text-[#008000]">maximum health</span> <span className="text-[#FF5F1F]">bonus physical damage</span> to the target and (<img src={melee} className="inline w-4 h-4" /> 3% / <img src={ranged} className="inline w-4 h-4" /> 1.5%) <span className="text-[#008000]">maximum health</span> <span className="text-[#FF5F1F]">physical damage</span> to other enemies in a cone in the direction of the primary target.
     </>]]
     },
 
     // Trail Blazer
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 182,
+        itemImg:trailblazer, 
+        itemName: "Trailblazer",
+        cost: 2400, 
+        attribute: [["+40 ", "Armor"], ["+250 ", "Health"], ["+4% ", "Movement Speed"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Lead the Way: While moving, generate 7 stacks of Momentum every 0.25 seconds, granting up to 20 <span className="text-white font-bold">bonus movement speed</span> at 100 stacks after 3.75 seconds of moving. At maximum stacks, you leave behind a path briefly that grants 15% of your total <span className="text-white font-bold">movement speed</span> as <span className="text-white font-bold">bonus movement speed</span> to allied champions within. Basic attacks consume all stacks. If you are melee and at maximum stacks, your next basic attack slows the target by 50% for 1 second.
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Momentum item. <br/>
+        Ranged champions do not apply the slow.
     </>]]
     },
 
     // Trinity Force
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 183,
+        itemImg: trinityforce, 
+        itemName: "Trinity Force",
+        cost: 3333, 
+        attribute: [["+36 ", "Attack Damage"], ["+15 ", "Ability Haste"], ["+30% ", "Attack Speed"], ["+333 ", "Health"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Spellblade: After using an ability, your next basic attack within 10 seconds deals 200% base <span className="text-[#FF5F1F]">AD bonus physical damage</span> on-hit (1.5 second cooldown, starts after using the empowered attack). <br/><br/>
+            Unique – Quicken: Basic attacks on-hit grant 20 <span className="text-white font-bold">bonus movement speed</span> for 2 seconds
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Spellblade item.
     </>]]
     },
 
     // Umbral
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 184,
+        itemImg: umbral, 
+        itemName: "Umbral Glaive",
+        cost: 2500, 
+        attribute: [["+55 ", "Attack Damage"], ["+10 ", "Ability Haste"], ["+15 ", "Lethality"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Blackout: When spotted by enemy stealthed wards or traps, gain Blackout for 8 seconds (90 second cooldown; 400 range). <br/><br/>
+            Blackout: You disable surrounding stealthed wards, as well as expose and reveal nearby stealthed wards and traps while Blackout is active. <br/><br/>
+            Unique – Extinguish: Your basic attacks deal (<img src={melee} className="inline w-4 h-4" /> 2 / <img src={ranged} className="inline w-4 h-4" /> 1) <span className="text-[#F28c28]">bonus true damage</span> to wards.
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Umbral Glaive.
     </>]]
     },
 
     // Unending
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 185,
+        itemImg: unending, 
+        itemName: "Unending Despair",
+        cost: 2800, 
+        attribute: [["+10 ", "Ability Haste"], ["+25 ", "Armor"], ["+25 ", "Magic Resistance"], ["+400 ", "Health"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Anguish: Every 4 seconds after entering combat with champions, sap all enemy champions around you within 650 units to deal <span className="text-[#6495ED]">magic damage</span> equal to 3% of your <span className="text-[#008000]">bonus health</span> to them and heal yourself equal to 250% of the post-mitigation damage dealt.
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Unending Despair.
     </>]]
     },
 
     // Wardstone
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Passive: ",
+        id: 186,
+        itemImg: wardstone, 
+        itemName: "Vigilant Wardstone",
+        cost: 2300, 
+        attribute: [["+20 ", "Ability Haste"], ["+25 ", "Armor"], ["+30 ", "Magic Resistance"], ["+250 ", "Health"]],
+        description: [["Active: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Arcane Cache: Purchasing a Control Ward stocks it as a charge, up to maximum of 3. <br/><br/>
+            Unique – Behold: Increase your Stealth Ward, Totem Ward, and Control Ward caps by 1.
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
-    </>]]
+        Limited to 1 Sightstone item.<br/>
+        Cannot purchase additional Control Wards while at maximum charges of Arcane Cache.
+    </>],
+    ["Requirements: ", 
+        <>
+            Can only be purchased after finishing a Support Quest (<img src={gold_icon} className="inline" /> 800 generated gold).
+        </>
+    ]]
     },
 
     // Voidstaff
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Passive: ",
-        <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
-        </> 
-        ],
-    ["Limitations: ", 
+        id: 187,
+        itemImg: voidstaff, 
+        itemName: "Void Staff",
+        cost: 3000, 
+        attribute: [["+95 ", "Ability Power"], ["+40% ", "Health"]],
+        description: [["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Blight item.
     </>]]
     },
 
     // Voltaic
     {
-        id: 100000,
-        itemImg: doranring, 
+        id: 188,
+        itemImg: voltaic, 
         itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        cost: 3000, 
+        attribute: [["+55 ", "Attack Damage"], ["+10 ", "Ability Haste"], ["+18 ", "Lethality"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Energized: Moving and basic attacking generates Energize stacks, up to 100. <br/>
+            Unique – Galvanize: Energized stack generation is increased by 75% for distance travelled from dashes, lunges and blinks, as well as while moving in stealth.<br/>
+            Unique – Firmament: When fully Energized, your next basic attack deals 100 <span className="text-[#FF5F1F]">bonus physical damage</span> on-hit and slows the target by (<img src={melee} className="inline w-4 h-4" /> 99% / <img src={ranged} className="inline w-4 h-4" /> 20%) for 0.75 seconds.
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Voltaic Cyclosword.
     </>]]
     },
 
     // Warmog
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 189,
+        itemImg: warmog, 
+        itemName: "Warmog's Armor",
+        cost: 3100, 
+        attribute: [["+1000 ", "Health"], ["+100% ", "Base Health Regeneration"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique: Grants Warmog's Heart if you have at least 2000 <span className="text-[#008000]">bonus health</span>. <br/>
+            Unique – Warmog's Heart: Regenerate 1.5% <span className="text-[#008000]">maximum health</span> every 0.5 seconds if damage has not been taken in the last 8 seconds (3 seconds for damage from non-champions). <br/>
+            Unique – Warmog's Vitality: Gain <span className="text-[#008000]">bonus health</span> equal to 12% <span className="text-[#008000]">bonus health</span> from items. 
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Warmog's Armor.
     </>]]
     },
 
     // Winter Approach
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 190,
+        itemImg: winterapproach, 
+        itemName: "Winter's Approach",
+        cost: 2400, 
+        attribute: [["+15 ", "Ability Haste"], ["+550 ", "Health"], ["+500 ", "Mana"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Awe: Grants <span className="text-[#008000]">bonus health</span> equal to 15% <span className="text-[#0096ff]">bonus mana</span>. <br/>
+            Unique – Manaflow: Grants a charge every 8 seconds, up to 4 charges. Consumes a charge on-hit and whenever affecting an enemy or ally with an ability to grant 3 <span className="text-[#0096ff]">bonus mana</span>, increased to 6 for champion targets, up to a maximum of 360 <span className="text-[#0096ff]">bonus mana</span>. <br/>
+            Transforms into Fimbulwinter at 360 <span className="text-[#0096ff]">bonus mana</span>.
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Manaflow item.
     </>]]
     },
 
     // Witend
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 191,
+        itemImg: witend, 
+        itemName: "Wit's End",
+        cost: 2800, 
+        attribute: [["+45 ", "Magic Resistance"], ["+50% ", "Attack Speed"], ["+20% ", "Tenacity"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Fray: Basic attacks deal 45 bonus <span className="text-[#6495ED]">magic damage</span> on-hit.
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Wit's End.
     </>]]
     },
 
     // youmuu
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Passive: ",
+        id: 192,
+        itemImg: youmuu, 
+        itemName: "Youmuu's Ghostblade",
+        cost: 2800, 
+        attribute: [["+55 ", "Attack Damage"], ["+18 ", "Lethality"], ["+4% ", "Movement Speed"]],
+        description: [["Active: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Wraith Step: Gain (<img src={melee} className="inline w-4 h-4" /> 20% /<img src={melee} className="inline w-4 h-4" /> 15%) <span className="text-white font-bold">bonus movement speed</span> and An icon representing the keyword Ghosted ghosting for (An icon representing the keyword Melee 6 / An icon representing the keyword Ranged 4) seconds (45 second cooldown).
         </> 
         ],
-    ["Limitations: ", 
+    ["Passive: ", 
     <>
-        Hello
-    </>]]
+        Unique – Haunt: Gain (<img src={melee} className="inline w-4 h-4" /> 20 / <img src={melee} className="inline w-4 h-4" /> 10) <span className="text-white font-bold">bonus movement speed</span> while out-of-combat with enemy champions for 3 seconds.
+    </>], 
+    ["Limitations: ",
+    <>
+        Limited to 1 Youmuu's Ghostblade.
+    </>
+    ]]
     },
 
     // Yuntal
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 193,
+        itemImg: yuntal, 
+        itemName: "Yun Tal Wildarrows",
+        cost: 3000, 
+        attribute: [["+55 ", "Attack Damage"], ["+35% ", "Attack Speed"], ["+0% ", "Critical Strike Chance"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Practice Makes Lethal: Basic attacks on-attack grant (<img src={melee} className="inline w-4 h-4" /> 0.4% / <img src={ranged} className="inline w-4 h-4" /> 0.2%) <span className="text-[#EE4B2B]">critical strike chance</span> permanently, stacking up to (<img src={melee} className="inline w-4 h-4" /> 63 / <img src={ranged} className="inline w-4 h-4" /> 125) times (capped at 25% <span className="text-[#EE4B2B]">critical strike chance</span>). <br /><br />
+            Unique – Flurry: Launching a basic attack against an enemy champion grants you 30% bonus attack speed for 6 seconds (30 second cooldown, reduced by 1 second on-hit and 2 seconds if the attack critically strikes).
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Yun Tal Wildarrows.
     </>]]
     },
 
     // Zazzak
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
+        id: 194,
+        itemImg: zazzak, 
+        itemName: "Zaz'Zak's Realmspike",
         cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
-        description: [["Passive: ",
+        attribute: [["+200 ", "Health"], ["+75% ", "Base Health Regeneration"], ["+75% ", "Base Mana Regeneration"], [<>+ <img src={gold_icon} className="inline" /> 5 </>, "per 10 seconds"]],
+        description: [["Active: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Ward: Consumes a charge to place a Stealth Ward at the target location, which grants sight of the surrounding area. Charges refill upon visiting the shop (4 charges; 600 range).
         </> 
         ],
-    ["Limitations: ", 
+    ["Passive: ", 
     <>
-        Hello
-    </>]]
+        Unique – Void Explosion: Dealing ability damage to an enemy champion creates an explosion at their location after a 0.5-second delay, dealing 10 (+ 15% <span className="text-[#5D3FD3]">AP</span>) (+ 3% of each target's <span className="text-[#008000]">maximum health</span>) <span className="text-[#6495ED]">magic damage</span> to enemies within the area, capped at 300 against monsters (10 second cooldown). <br /><br />
+        Unique: Receives diminishing gold from excessive minion kills.
+    </>], ["Limitations: ", "Limited to 1 Support / Jungle item."],
+    ["Requirements: ",
+        <>
+            Requires completion of the support quest for Runic Compass, which transforms into Bounty of Worlds afterwards to allow you to upgrade into this item for free.
+        </>
+    ]]
     },
 
     // Zeke
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 195,
+        itemImg: zeke, 
+        itemName: "Zeke's Convergence",
+        cost: 2200, 
+        attribute: [["+25 ", "Armor"], ["+25 ", "Magic Resistance"], ["+300 ", "Health"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Frostfire Tempest: Upon casting your ultimate ability, you summon a storm of flame and ice around you for 5 seconds, dealing 7.5 <span className="text-[#6495ED]">magic damage</span> every 0.25 seconds to enemies within 350 units and slowing them by 30% (45 second cooldown, starts on ultimate cast).
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Zeke's Convergence.
     </>]]
     },
 
     // Zhonya
     {
-        id: 100000,
-        itemImg: doranring, 
-        itemName: "Doran's Ring",
-        cost: 400, 
-        attribute: [["+18 ", "Ability Power"], ["+90 ", "Health"]],
+        id: 196,
+        itemImg: zhonya, 
+        itemName: "Zhonya's Hourglass",
+        cost: 3250, 
+        attribute: [["+105 ", "Ability Power"], ["+50 ", "Armor"]],
         description: [["Passive: ",
         <>
-            Killing a minion grants an additional An icon representing Gold 1, up to a maximum of An icon representing Gold 100.
+            Unique – Time Stop: Put yourself in stasis for 2.5 seconds, rendering you untargetable and invulnerable for the duration but also unable to move, declare basic attacks, cast abilities, use summoner spells, or activate items (120 second cooldown).
         </> 
         ],
     ["Limitations: ", 
     <>
-        Hello
+        Limited to 1 Stasis item.
     </>]]
     }
 
