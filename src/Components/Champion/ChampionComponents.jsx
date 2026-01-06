@@ -1,10 +1,33 @@
+import {useState, useRef} from "react";
+import Build from "../Champion/Build.jsx";
+import Counter from "../Champion/Counter.jsx";
+import Guide from "../Champion/Guide.jsx";
+
 import aatrox from "../../champion-img/Aatrox.png";
 import top from "../../role-img/top.png";
 import jungle from "../../role-img/jg.png";
 
-export function Aatrox() {
+export function Aatrox() {  
+
+  const [clickedItem, setClickedItem] = useState(0);
+  let displayItem;
+  switch(clickedItem) {
+    case 0: 
+      displayItem = "";
+      break;
+    case 1:
+      displayItem = <Build />;
+      break;
+    case 2:
+      displayItem = <Guide />;
+      break;
+    case 3:
+      displayItem = <Counter />;
+      break;
+  }
+
   return (
-    <div className="">
+    <div className="flex flex-col gap-25">
 
       <div className="flex justify-around">
         <div className="flex gap-8 w-3/10 min-w-[400px]">
@@ -35,6 +58,18 @@ export function Aatrox() {
             <span className="font-bold">1000000</span>
           </div>
         </div>
+      </div>
+
+      <nav>
+        <ul className="flex md:mx-[15%] gap-20 text-lg text-[#7F8AA3] border-b border-[rgba(230,234,242,0.10)] pb-5">
+          <li className={`hover:text-white ${(clickedItem == 1) && "text-white"}`} value="build" key="build" onClick={() => setClickedItem(1)}>Build</li>
+          <li className={`hover:text-white ${(clickedItem == 2) && "text-white"}`} value="guide" key="guide" onClick={() => setClickedItem(2)}>Guide</li>
+          <li className={`hover:text-white ${(clickedItem == 3) && "text-white"}`} value="counter" key="counter" onClick={() => setClickedItem(3)}>Counter</li>
+        </ul> 
+      </nav>
+      
+      <div className="md:mx-[15%]">
+        {displayItem}
       </div>
 
     </div>

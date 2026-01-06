@@ -1,5 +1,5 @@
 import GameKnowledge from './GameKnowledge.jsx'
-import Champion from './Champion.jsx'
+import Champion from '../Champion/Champion.jsx'
 import Items from './Items.jsx'
 import { Link } from 'react-router-dom';
 import { createPortal} from 'react-dom';
