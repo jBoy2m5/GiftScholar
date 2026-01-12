@@ -21,6 +21,7 @@ import bloodlineblack from "../../rune-png/bloodline-modified.webp"
 import boneplating from "../../rune-png/boneplating.webp"
 import boneplatingblack from "../../rune-png/boneplating-modified.webp"
 import conditioning from "../../rune-png/conditioning.webp"
+import conditioningblack from "../../rune-png/conditioning-modified.webp"
 import conquerorblack from "../../rune-png/conqueror-modified.png"
 import coupdegrace from "../../rune-png/coupdegrace.webp"
 import coupdegraceblack from "../../rune-png/coupdegrace-modified.webp"
@@ -29,6 +30,7 @@ import cutdownblack from "../../rune-png/cutdown-modified.webp"
 import demolish from "../../rune-png/demolish.webp"
 import demolishblack from "../../rune-png/demolish-modified.webp"
 import fleetfootwork from "../../rune-png/fleetfootwork.png"
+import fleetfootworkblack from "../../rune-png/fleetfootwork-modified.png"
 import fontoflife from "../../rune-png/fontoflife.webp"
 import fontoflifeblack from "../../rune-png/fontoflife-modified.webp"
 import haste from "../../rune-png/haste.webp"
@@ -45,15 +47,18 @@ import overgrowthblack from "../../rune-png/overgrowth-modified.webp"
 import presenceofmind from "../../rune-png/presenceofmind.webp"
 import pressattackblack from "../../rune-png/pressattack-modified.png"
 import revitalize from "../../rune-png/revitalize.webp"
+import revitalizeblack from "../../rune-png/revitalize-modified.webp"
 import secondwind from "../../rune-png/secondwind.webp"
 import secondwindblack from "../../rune-png/secondwind-modified.webp"
 import shieldbash from "../../rune-png/shieldbash.webp"
 import shieldbashblack from "../../rune-png/shieldbash-modified.webp"
 import tenacity from "../../rune-png/tenacity.svg"
 import triumph from "../../rune-png/triumph.webp"
+import triumphblack from "../../rune-png/triumph-modified.webp"
 import unfliching from "../../rune-png/unfliching.webp"
 import unflichingblack from "../../rune-png/unfliching-modified.webp"
-
+import precision from "../../rune-png/precision.svg"
+import resolve from "../../rune-png/resolve.svg"
 
 
 export function Aatrox() {  
@@ -119,7 +124,88 @@ export function Aatrox() {
       
       <div className="md:mx-[15%]">
         {displayItem}
-        <img src={conqueror} />
+        <span className="font-semibold">RUNES</span>
+        <div className="flex mt-8 justify-between">
+          <div className="flex flex-col w-[45%] max-w-xs">
+            <div className="flex gap-3 items-center mb-5 mx-auto">
+              <img src={precision} className="w-12 inline" />
+              <span className="font-bold">Precision</span>
+            </div>
+            <div className="flex-col items-center">
+              <div className="flex gap-5 justify-between my-5">
+                <img src={pressattackblack} className="w-12" />
+                <img src={lethaltempoblack} className="w-12" />
+                <img src={fleetfootworkblack} className="w-12" />
+                <img src={conqueror} className="w-12" />
+              </div>
+              <div className="flex justify-evenly my-5">
+                <img src={absorblifeblack} className="w-10" />
+                <img src={triumph} className="w-10" />
+                <img src={fleetfootworkblack} className="w-10" />
+              </div>
+              <div className="flex justify-evenly my-5">
+                <img src={alcacrityblack} className="w-10" />
+                <img src={haste} className="w-10" />
+                <img src={bloodlineblack} className="w-10" />
+              </div>
+              <div className="flex justify-evenly my-5">
+                <img src={coupdegraceblack} className="w-10" />
+                <img src={cutdownblack} className="w-10" />
+                <img src={laststand} className="w-10" />
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col w-[45%] max-w-xs">
+            <div className="flex gap-3 items-center mb-5 mx-auto">
+              <img src={resolve} className="w-12 inline" />
+              <span className="font-bold">Resolve</span>
+            </div>
+            <div className="flex-col items-center">
+              <div className="flex justify-evenly my-5">
+                <img src={demolishblack} className="w-10" />
+                <img src={fontoflifeblack} className="w-10" />
+                <img src={shieldbashblack} className="w-10" />
+              </div>
+              <div className="flex justify-evenly my-5">
+                <img src={conditioningblack} className="w-10" />
+                <img src={secondwindblack} className="w-10" />
+                <img src={boneplating} className="w-10" />
+              </div>
+              <div className="flex justify-evenly my-5">
+                <img src={alcacrityblack} className="w-10" />
+                <img src={haste} className="w-10" />
+                <img src={bloodlineblack} className="w-10" />
+              </div>
+              <div className="flex justify-evenly my-5">
+                <img src={overgrowth} className="w-10" />
+                <img src={revitalizeblack} className="w-10" />
+                <img src={unflichingblack} className="w-10" />
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-5 mt-5">
+              <div className="flex justify-evenly">
+                <img src={adaptiveforce} className="w-5" />
+                <img src={attackspeed} className="w-5" style={{filter: 'grayscale(100%)'}} />
+                <img src={abilityhaste} className="w-5" style={{filter: 'grayscale(100%)'}} />
+              </div>
+              <div className="flex justify-evenly">
+                <img src={adaptiveforce} className="w-5" />
+                <img src={movespeed} className="w-5" style={{filter: 'grayscale(100%)'}} />
+                <img src={healthscaling} className="w-5" style={{filter: 'grayscale(100%)'}} />
+              </div>
+              <div className="flex justify-evenly">
+                <img src={health} className="w-5" style={{filter: 'grayscale(100%)'}} />
+                <img src={tenacity} className="w-5" style={{filter: 'grayscale(100%)'}} />
+                <img src={healthscaling} className="w-5" />
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
     </div>
