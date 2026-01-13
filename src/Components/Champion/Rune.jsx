@@ -62,6 +62,24 @@ import resolve from "../../rune-png/resolve.svg";
 import graspofundying from "../../rune-png/graspofundying.png";
 import aftershock from "../../rune-png/aftershock.png";
 import guardian from "../../rune-png/guardian.png";
+import electrocute from "../../rune-png/electrocute.png";
+import darkharvest from "../../rune-png/darkharvest.webp"
+import hailofblades from "../../rune-png/hallofblades.png"
+import cheapshot from "../../rune-png/cheapshot.webp"
+import tasteofblood from "../../rune-png/tasteofblood.webp"
+import suddenimpact from "../../rune-png/suddenimpact.webp"
+import sixthsense from "../../rune-png/sixthsense.webp"
+import grisly from "../../rune-png/grisly.webp"
+import deepward from "../../rune-png/deepward.webp"
+import treasurehunter from "../../rune-png/treasurehunter.webp"
+import relentlesshunter from "../../rune-png/relentlesshunter.webp"
+import ultimatehunter from "../../rune-png/ultimatehunter.png"
+import domination from "../../rune-png/domination.svg"
+
+
+
+
+
 
 function Shard(props) {
   return (
@@ -290,6 +308,97 @@ export function ResolveComponent(props) {
           />
           <img
             src={unfliching}
+            className="w-10"
+            style={{ filter: props.lane4 !== 3 && "grayscale(100%)" }}
+          />
+        </div>
+      </div>
+
+      {!props.isMainPath && 
+      <Shard 
+            lane1={props.p1}
+            lane2={props.p2}
+            lane3={props.p3}
+      />
+      }
+    </div>
+  );
+}
+
+export function DominationComponent(props) {
+  return (
+    <div className="flex flex-col w-[45%] max-w-xs mt-1">
+      <div className="flex gap-3 items-center mb-5 mx-auto">
+        <img src={domination} className="w-12 inline" />
+        <span className="font-bold">Domination</span>
+      </div>
+      <div className="flex-col items-center">
+        {props.isMainPath && (
+          <div className="flex gap-5 justify-evenly my-5">
+            <img
+              src={electrocute}
+              className="w-12"
+              style={{ filter: props.lane1 !== 1 && "grayscale(100%)" }}
+            />
+            <img
+              src={darkharvest}
+              className="w-12"
+              style={{ filter: props.lane1 !== 2 && "grayscale(100%)" }}
+            />
+            <img
+              src={hailofblades}
+              className="w-12"
+              style={{ filter: props.lane1 !== 3 && "grayscale(100%)" }}
+            />
+          </div>
+        )}
+        <div className="flex justify-evenly my-5">
+          <img
+            src={cheapshot}
+            className="w-10"
+            style={{ filter: props.lane2 !== 1 && "grayscale(100%)" }}
+          />
+          <img
+            src={tasteofblood}
+            className="w-10"
+            style={{ filter: props.lane2 !== 2 && "grayscale(100%)" }}
+          />
+          <img
+            src={suddenimpact}
+            className="w-10"
+            style={{ filter: props.lane2 !== 3 && "grayscale(100%)" }}
+          />
+        </div>
+        <div className="flex justify-evenly my-5">
+          <img
+            src={sixthsense}
+            className="w-10"
+            style={{ filter: props.lane3 !== 1 && "grayscale(100%)" }}
+          />
+          <img
+            src={grisly}
+            className="w-10"
+            style={{ filter: props.lane3 !== 2 && "grayscale(100%)" }}
+          />
+          <img
+            src={deepward}
+            className="w-10"
+            style={{ filter: props.lane3 !== 3 && "grayscale(100%)" }}
+          />
+        </div>
+        <div className="flex justify-evenly my-5">
+          <img
+            src={treasurehunter}
+            className="w-10"
+            style={{ filter: props.lane4 !== 1 && "grayscale(100%)" }}
+          />
+          <img
+            src={relentlesshunter}
+            className="w-10"
+            style={{ filter: props.lane4 !== 2 && "grayscale(100%)" }}
+          />
+          <img
+            src={ultimatehunter}
             className="w-10"
             style={{ filter: props.lane4 !== 3 && "grayscale(100%)" }}
           />
