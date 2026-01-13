@@ -7,61 +7,7 @@ import aatrox from "../../champion-img/Aatrox.png";
 import top from "../../role-img/top.png";
 import jungle from "../../role-img/jg.png";
 
-import conqueror from "../../rune-png/conqueror.png";
-import pressattack from "../../rune-png/pressattack.png";
-import abilityhaste from "../../rune-png/abilityhaste.svg";
-import absorblife from "../../rune-png/absorblife.webp";
-import adaptiveforce from "../../rune-png/adaptiveforce.svg";
-import alcacrity from "../../rune-png/alcacrity.png";
-import absorblifeblack from "../../rune-png/absorblife-modified.webp";
-import alcacrityblack from "../../rune-png/alcacrity-modified.png";
-import attackspeed from "../../rune-png/atkspeed.svg";
-import bloodline from "../../rune-png/bloodline.webp";
-import bloodlineblack from "../../rune-png/bloodline-modified.webp";
-import boneplating from "../../rune-png/boneplating.webp";
-import boneplatingblack from "../../rune-png/boneplating-modified.webp";
-import conditioning from "../../rune-png/conditioning.webp";
-import conditioningblack from "../../rune-png/conditioning-modified.webp";
-import conquerorblack from "../../rune-png/conqueror-modified.png";
-import coupdegrace from "../../rune-png/coupdegrace.webp";
-import coupdegraceblack from "../../rune-png/coupdegrace-modified.webp";
-import cutdown from "../../rune-png/cutdown.webp";
-import cutdownblack from "../../rune-png/cutdown-modified.webp";
-import demolish from "../../rune-png/demolish.webp";
-import demolishblack from "../../rune-png/demolish-modified.webp";
-import fleetfootwork from "../../rune-png/fleetfootwork.png";
-import fleetfootworkblack from "../../rune-png/fleetfootwork-modified.png";
-import fontoflife from "../../rune-png/fontoflife.webp";
-import fontoflifeblack from "../../rune-png/fontoflife-modified.webp";
-import haste from "../../rune-png/haste.webp";
-import hasteblack from "../../rune-png/haste-modified.webp";
-import health from "../../rune-png/health.svg";
-import healthscaling from "../../rune-png/healthscaling.svg";
-import laststand from "../../rune-png/laststand.webp";
-import laststandblack from "../../rune-png/laststand-modified.webp";
-import lethaltempo from "../../rune-png/lethaltempo.png";
-import lethaltempoblack from "../../rune-png/lethaltempo-modified.png";
-import movespeed from "../../rune-png/movespeed.svg";
-import overgrowth from "../../rune-png/overgrowth.webp";
-import overgrowthblack from "../../rune-png/overgrowth-modified.webp";
-import presenceofmind from "../../rune-png/presenceofmind.webp";
-import pressattackblack from "../../rune-png/pressattack-modified.png";
-import revitalize from "../../rune-png/revitalize.webp";
-import revitalizeblack from "../../rune-png/revitalize-modified.webp";
-import secondwind from "../../rune-png/secondwind.webp";
-import secondwindblack from "../../rune-png/secondwind-modified.webp";
-import shieldbash from "../../rune-png/shieldbash.webp";
-import shieldbashblack from "../../rune-png/shieldbash-modified.webp";
-import tenacity from "../../rune-png/tenacity.svg";
-import triumph from "../../rune-png/triumph.webp";
-import triumphblack from "../../rune-png/triumph-modified.webp";
-import unfliching from "../../rune-png/unfliching.webp";
-import unflichingblack from "../../rune-png/unfliching-modified.webp";
-import precision from "../../rune-png/precision.svg";
-import resolve from "../../rune-png/resolve.svg";
-import graspofundying from "../../rune-png/graspofundying.png";
-import aftershock from "../../rune-png/aftershock.png";
-import guardian from "../../rune-png/guardian.png";
+
 
 import { PrecisionComponent, ResolveComponent } from "./Rune.jsx";
 
@@ -160,8 +106,11 @@ export function Aatrox() {
             <ResolveComponent
               lane3={3}
               lane4={2}
+              p1={1}
+              p2={1}
+              p3={3}
             />
-            
+
           </div>
         </div>
       </div>

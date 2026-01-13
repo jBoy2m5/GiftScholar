@@ -59,165 +59,250 @@ import unfliching from "../../rune-png/unfliching.webp";
 import unflichingblack from "../../rune-png/unfliching-modified.webp";
 import precision from "../../rune-png/precision.svg";
 import resolve from "../../rune-png/resolve.svg";
-import graspofundying from "../../rune-png/graspofundying.png"
-import aftershock from "../../rune-png/aftershock.png"
-import guardian from "../../rune-png/guardian.png"
+import graspofundying from "../../rune-png/graspofundying.png";
+import aftershock from "../../rune-png/aftershock.png";
+import guardian from "../../rune-png/guardian.png";
+
+function Shard(props) {
+  return (
+    <div className="flex flex-col gap-5 mt-5">
+      <div className="flex justify-evenly">
+        <img
+          src={adaptiveforce}
+          className="w-5"
+          style={{ filter: props.lane1 !== 1 && "grayscale(100%)" }}
+        />
+        <img
+          src={attackspeed}
+          className="w-5"
+          style={{ filter: props.lane1 !== 2 && "grayscale(100%)" }}
+        />
+        <img
+          src={abilityhaste}
+          className="w-5"
+          style={{ filter: props.lane1 !== 3 && "grayscale(100%)" }}
+        />
+      </div>
+      <div className="flex justify-evenly">
+        <img
+          src={adaptiveforce}
+          className="w-5"
+          style={{ filter: props.lane2 !== 1 && "grayscale(100%)" }}
+        />
+        <img
+          src={movespeed}
+          className="w-5"
+          style={{ filter: props.lane2 !== 2 && "grayscale(100%)" }}
+        />
+        <img
+          src={healthscaling}
+          className="w-5"
+          style={{ filter: props.lane2 !== 3 && "grayscale(100%)" }}
+        />
+      </div>
+      <div className="flex justify-evenly">
+        <img
+          src={health}
+          className="w-5"
+          style={{ filter: props.lane3 !== 1 && "grayscale(100%)" }}
+        />
+        <img
+          src={tenacity}
+          className="w-5"
+          style={{ filter: props.lane3 !== 2 && "grayscale(100%)" }}
+        />
+        <img
+          src={healthscaling}
+          className="w-5"
+          style={{ filter: props.lane3 !== 3 && "grayscale(100%)" }}
+        />
+      </div>
+    </div>
+  );
+}
 
 export function PrecisionComponent(props) {
-    return(
-        <div className="flex flex-col w-[45%] max-w-xs">
-            <div className="flex gap-3 items-center mb-5 mx-auto">
-              <img src={precision} className="w-12 inline" />
-              <span className="font-bold">Precision</span>
-            </div>
-            <div className="flex-col items-center">
-            { props.isMainPath &&
-              (<div className="flex gap-5 justify-between my-5">
-                <img src={pressattack} className="w-12" style={{filter: props.lane1 !== 1 && "grayscale(100%)"}} />
-                <img src={lethaltempo} className="w-12" style={{filter: props.lane1 !== 2 && "grayscale(100%)"}} />
-                <img src={fleetfootwork} className="w-12" style={{filter: props.lane1 !== 3 && "grayscale(100%)"}} />
-                <img src={conqueror} className="w-12" style={{filter: props.lane1 !== 4 && "grayscale(100%)"}} />
-              </div>)
-            }
-              <div className="flex justify-evenly my-5">
-                <img src={absorblife} className="w-10" style={{filter: props.lane2 !== 1 && "grayscale(100%)"}} />
-                <img src={triumph} className="w-10" style={{filter: props.lane2 !== 2 && "grayscale(100%)"}} />
-                <img src={fleetfootwork} className="w-10" style={{filter: props.lane2 !== 3 && "grayscale(100%)"}} />
-              </div>
-              <div className="flex justify-evenly my-5">
-                <img src={alcacrity} className="w-10" style={{filter: props.lane3 !== 1 && "grayscale(100%)"}} />
-                <img src={haste} className="w-10" style={{filter: props.lane3 !== 2 && "grayscale(100%)"}} />
-                <img src={bloodline} className="w-10" style={{filter: props.lane3 !== 3 && "grayscale(100%)"}} />
-              </div>
-              <div className="flex justify-evenly my-5">
-                <img src={coupdegrace} className="w-10" style={{filter: props.lane4 !== 1 && "grayscale(100%)"}} />
-                <img src={cutdown} className="w-10" style={{filter: props.lane4 !== 2 && "grayscale(100%)"}} />
-                <img src={laststand} className="w-10" style={{filter: props.lane4 !== 3 && "grayscale(100%)"}} />
-              </div>
-            </div>
-            { !props.isMainPath &&
-            <div className="flex flex-col gap-5 mt-5">
-              <div className="flex justify-evenly">
-                <img src={adaptiveforce} className="w-5" />
-                <img
-                  src={attackspeed}
-                  className="w-5"
-                  style={{ filter: "grayscale(0%)" }}
-                />
-                <img
-                  src={abilityhaste}
-                  className="w-5"
-                  style={{ filter: "grayscale(100%)" }}
-                />
-              </div>
-              <div className="flex justify-evenly">
-                <img src={adaptiveforce} className="w-5" />
-                <img
-                  src={movespeed}
-                  className="w-5"
-                  style={{ filter: "grayscale(100%)" }}
-                />
-                <img
-                  src={healthscaling}
-                  className="w-5"
-                  style={{ filter: "grayscale(100%)" }}
-                />
-              </div>
-              <div className="flex justify-evenly">
-                <img
-                  src={health}
-                  className="w-5"
-                  style={{ filter: "grayscale(100%)" }}
-                />
-                <img
-                  src={tenacity}
-                  className="w-5"
-                  style={{ filter: "grayscale(100%)" }}
-                />
-                <img src={healthscaling} className="w-5" />
-              </div>
-            </div>
-        }
+  return (
+    <div className="flex flex-col w-[45%] max-w-xs">
+      <div className="flex gap-3 items-center mb-5 mx-auto">
+        <img src={precision} className="w-12 inline" />
+        <span className="font-bold">Precision</span>
+      </div>
+      <div className="flex-col items-center">
+        {props.isMainPath && (
+          <div className="flex gap-5 justify-between my-5">
+            <img
+              src={pressattack}
+              className="w-12"
+              style={{ filter: props.lane1 !== 1 && "grayscale(100%)" }}
+            />
+            <img
+              src={lethaltempo}
+              className="w-12"
+              style={{ filter: props.lane1 !== 2 && "grayscale(100%)" }}
+            />
+            <img
+              src={fleetfootwork}
+              className="w-12"
+              style={{ filter: props.lane1 !== 3 && "grayscale(100%)" }}
+            />
+            <img
+              src={conqueror}
+              className="w-12"
+              style={{ filter: props.lane1 !== 4 && "grayscale(100%)" }}
+            />
           </div>
-    )
+        )}
+        <div className="flex justify-evenly my-5">
+          <img
+            src={absorblife}
+            className="w-10"
+            style={{ filter: props.lane2 !== 1 && "grayscale(100%)" }}
+          />
+          <img
+            src={triumph}
+            className="w-10"
+            style={{ filter: props.lane2 !== 2 && "grayscale(100%)" }}
+          />
+          <img
+            src={fleetfootwork}
+            className="w-10"
+            style={{ filter: props.lane2 !== 3 && "grayscale(100%)" }}
+          />
+        </div>
+        <div className="flex justify-evenly my-5">
+          <img
+            src={alcacrity}
+            className="w-10"
+            style={{ filter: props.lane3 !== 1 && "grayscale(100%)" }}
+          />
+          <img
+            src={haste}
+            className="w-10"
+            style={{ filter: props.lane3 !== 2 && "grayscale(100%)" }}
+          />
+          <img
+            src={bloodline}
+            className="w-10"
+            style={{ filter: props.lane3 !== 3 && "grayscale(100%)" }}
+          />
+        </div>
+        <div className="flex justify-evenly my-5">
+          <img
+            src={coupdegrace}
+            className="w-10"
+            style={{ filter: props.lane4 !== 1 && "grayscale(100%)" }}
+          />
+          <img
+            src={cutdown}
+            className="w-10"
+            style={{ filter: props.lane4 !== 2 && "grayscale(100%)" }}
+          />
+          <img
+            src={laststand}
+            className="w-10"
+            style={{ filter: props.lane4 !== 3 && "grayscale(100%)" }}
+          />
+        </div>
+      </div>
+      {!props.isMainPath && (
+        <Shard 
+            lane1={props.p1}
+            lane2={props.p2}
+            lane3={props.p3}
+        />
+      )}
+    </div>
+  );
 }
 
 export function ResolveComponent(props) {
-    return(
-        <div className="flex flex-col w-[45%] max-w-xs mt-1">
-            <div className="flex gap-3 items-center mb-5 mx-auto">
-              <img src={resolve} className="w-12 inline" />
-              <span className="font-bold">Resolve</span>
-            </div>
-            <div className="flex-col items-center">
-            { props.isMainPath &&
-              (<div className="flex gap-5 justify-between my-5">
-                <img src={graspofundying} className="w-12" style={{filter: props.lane1 !== 1 && "grayscale(100%)"}} />
-                <img src={aftershock} className="w-12" style={{filter: props.lane1 !== 2 && "grayscale(100%)"}} />
-                <img src={guardian} className="w-12" style={{filter: props.lane1 !== 3 && "grayscale(100%)"}} />
-              </div>)
-            }
-              <div className="flex justify-evenly my-5">
-                <img src={demolish} className="w-10" style={{filter: props.lane2 !== 1 && "grayscale(100%)"}} />
-                <img src={fontoflife} className="w-10" style={{filter: props.lane2 !== 2 && "grayscale(100%)"}} />
-                <img src={shieldbash} className="w-10" style={{filter: props.lane2 !== 3 && "grayscale(100%)"}} />
-              </div>
-              <div className="flex justify-evenly my-5">
-                <img src={conditioning} className="w-10" style={{filter: props.lane3 !== 1 && "grayscale(100%)"}} />
-                <img src={secondwind} className="w-10" style={{filter: props.lane3 !== 2 && "grayscale(100%)"}} />
-                <img src={boneplating} className="w-10" style={{filter: props.lane3 !== 3 && "grayscale(100%)"}} />
-              </div>
-              <div className="flex justify-evenly my-5">
-                <img src={overgrowth} className="w-10" style={{filter: props.lane4 !== 1 && "grayscale(100%)"}} />
-                <img src={revitalize} className="w-10" style={{filter: props.lane4 !== 2 && "grayscale(100%)"}} />
-                <img src={unfliching} className="w-10" style={{filter: props.lane4 !== 3 && "grayscale(100%)"}} />
-              </div>
-            </div>
-
-            { !props.isMainPath &&
-            <div className="flex flex-col gap-5 mt-5">
-              <div className="flex justify-evenly">
-                <img src={adaptiveforce} className="w-5" />
-                <img
-                  src={attackspeed}
-                  className="w-5"
-                  style={{ filter: "grayscale(0%)" }}
-                />
-                <img
-                  src={abilityhaste}
-                  className="w-5"
-                  style={{ filter: "grayscale(100%)" }}
-                />
-              </div>
-              <div className="flex justify-evenly">
-                <img src={adaptiveforce} className="w-5" />
-                <img
-                  src={movespeed}
-                  className="w-5"
-                  style={{ filter: "grayscale(100%)" }}
-                />
-                <img
-                  src={healthscaling}
-                  className="w-5"
-                  style={{ filter: "grayscale(100%)" }}
-                />
-              </div>
-              <div className="flex justify-evenly">
-                <img
-                  src={health}
-                  className="w-5"
-                  style={{ filter: "grayscale(100%)" }}
-                />
-                <img
-                  src={tenacity}
-                  className="w-5"
-                  style={{ filter: "grayscale(100%)" }}
-                />
-                <img src={healthscaling} className="w-5" />
-              </div>
-            </div>
-        }
-
+  return (
+    <div className="flex flex-col w-[45%] max-w-xs mt-1">
+      <div className="flex gap-3 items-center mb-5 mx-auto">
+        <img src={resolve} className="w-12 inline" />
+        <span className="font-bold">Resolve</span>
+      </div>
+      <div className="flex-col items-center">
+        {props.isMainPath && (
+          <div className="flex gap-5 justify-between my-5">
+            <img
+              src={graspofundying}
+              className="w-12"
+              style={{ filter: props.lane1 !== 1 && "grayscale(100%)" }}
+            />
+            <img
+              src={aftershock}
+              className="w-12"
+              style={{ filter: props.lane1 !== 2 && "grayscale(100%)" }}
+            />
+            <img
+              src={guardian}
+              className="w-12"
+              style={{ filter: props.lane1 !== 3 && "grayscale(100%)" }}
+            />
           </div>
-    )
-} 
+        )}
+        <div className="flex justify-evenly my-5">
+          <img
+            src={demolish}
+            className="w-10"
+            style={{ filter: props.lane2 !== 1 && "grayscale(100%)" }}
+          />
+          <img
+            src={fontoflife}
+            className="w-10"
+            style={{ filter: props.lane2 !== 2 && "grayscale(100%)" }}
+          />
+          <img
+            src={shieldbash}
+            className="w-10"
+            style={{ filter: props.lane2 !== 3 && "grayscale(100%)" }}
+          />
+        </div>
+        <div className="flex justify-evenly my-5">
+          <img
+            src={conditioning}
+            className="w-10"
+            style={{ filter: props.lane3 !== 1 && "grayscale(100%)" }}
+          />
+          <img
+            src={secondwind}
+            className="w-10"
+            style={{ filter: props.lane3 !== 2 && "grayscale(100%)" }}
+          />
+          <img
+            src={boneplating}
+            className="w-10"
+            style={{ filter: props.lane3 !== 3 && "grayscale(100%)" }}
+          />
+        </div>
+        <div className="flex justify-evenly my-5">
+          <img
+            src={overgrowth}
+            className="w-10"
+            style={{ filter: props.lane4 !== 1 && "grayscale(100%)" }}
+          />
+          <img
+            src={revitalize}
+            className="w-10"
+            style={{ filter: props.lane4 !== 2 && "grayscale(100%)" }}
+          />
+          <img
+            src={unfliching}
+            className="w-10"
+            style={{ filter: props.lane4 !== 3 && "grayscale(100%)" }}
+          />
+        </div>
+      </div>
+
+      {!props.isMainPath && 
+      <Shard 
+            lane1={props.p1}
+            lane2={props.p2}
+            lane3={props.p3}
+      />
+      }
+    </div>
+  );
+}
