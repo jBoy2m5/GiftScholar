@@ -1,0 +1,223 @@
+import { useState, useRef } from "react";
+import Build from "../Champion/Build.jsx";
+import Counter from "../Champion/Counter.jsx";
+import Guide from "../Champion/Guide.jsx";
+
+import aatrox from "../../champion-img/Aatrox.png";
+import top from "../../role-img/top.png";
+import jungle from "../../role-img/jg.png";
+
+import conqueror from "../../rune-png/conqueror.png";
+import pressattack from "../../rune-png/pressattack.png";
+import abilityhaste from "../../rune-png/abilityhaste.svg";
+import absorblife from "../../rune-png/absorblife.webp";
+import adaptiveforce from "../../rune-png/adaptiveforce.svg";
+import alcacrity from "../../rune-png/alcacrity.png";
+import absorblifeblack from "../../rune-png/absorblife-modified.webp";
+import alcacrityblack from "../../rune-png/alcacrity-modified.png";
+import attackspeed from "../../rune-png/atkspeed.svg";
+import bloodline from "../../rune-png/bloodline.webp";
+import bloodlineblack from "../../rune-png/bloodline-modified.webp";
+import boneplating from "../../rune-png/boneplating.webp";
+import boneplatingblack from "../../rune-png/boneplating-modified.webp";
+import conditioning from "../../rune-png/conditioning.webp";
+import conditioningblack from "../../rune-png/conditioning-modified.webp";
+import conquerorblack from "../../rune-png/conqueror-modified.png";
+import coupdegrace from "../../rune-png/coupdegrace.webp";
+import coupdegraceblack from "../../rune-png/coupdegrace-modified.webp";
+import cutdown from "../../rune-png/cutdown.webp";
+import cutdownblack from "../../rune-png/cutdown-modified.webp";
+import demolish from "../../rune-png/demolish.webp";
+import demolishblack from "../../rune-png/demolish-modified.webp";
+import fleetfootwork from "../../rune-png/fleetfootwork.png";
+import fleetfootworkblack from "../../rune-png/fleetfootwork-modified.png";
+import fontoflife from "../../rune-png/fontoflife.webp";
+import fontoflifeblack from "../../rune-png/fontoflife-modified.webp";
+import haste from "../../rune-png/haste.webp";
+import hasteblack from "../../rune-png/haste-modified.webp";
+import health from "../../rune-png/health.svg";
+import healthscaling from "../../rune-png/healthscaling.svg";
+import laststand from "../../rune-png/laststand.webp";
+import laststandblack from "../../rune-png/laststand-modified.webp";
+import lethaltempo from "../../rune-png/lethaltempo.png";
+import lethaltempoblack from "../../rune-png/lethaltempo-modified.png";
+import movespeed from "../../rune-png/movespeed.svg";
+import overgrowth from "../../rune-png/overgrowth.webp";
+import overgrowthblack from "../../rune-png/overgrowth-modified.webp";
+import presenceofmind from "../../rune-png/presenceofmind.webp";
+import pressattackblack from "../../rune-png/pressattack-modified.png";
+import revitalize from "../../rune-png/revitalize.webp";
+import revitalizeblack from "../../rune-png/revitalize-modified.webp";
+import secondwind from "../../rune-png/secondwind.webp";
+import secondwindblack from "../../rune-png/secondwind-modified.webp";
+import shieldbash from "../../rune-png/shieldbash.webp";
+import shieldbashblack from "../../rune-png/shieldbash-modified.webp";
+import tenacity from "../../rune-png/tenacity.svg";
+import triumph from "../../rune-png/triumph.webp";
+import triumphblack from "../../rune-png/triumph-modified.webp";
+import unfliching from "../../rune-png/unfliching.webp";
+import unflichingblack from "../../rune-png/unfliching-modified.webp";
+import precision from "../../rune-png/precision.svg";
+import resolve from "../../rune-png/resolve.svg";
+import graspofundying from "../../rune-png/graspofundying.png"
+import aftershock from "../../rune-png/aftershock.png"
+import guardian from "../../rune-png/guardian.png"
+
+export function PrecisionComponent(props) {
+    return(
+        <div className="flex flex-col w-[45%] max-w-xs">
+            <div className="flex gap-3 items-center mb-5 mx-auto">
+              <img src={precision} className="w-12 inline" />
+              <span className="font-bold">Precision</span>
+            </div>
+            <div className="flex-col items-center">
+            { props.isMainPath &&
+              (<div className="flex gap-5 justify-between my-5">
+                <img src={pressattack} className="w-12" style={{filter: props.lane1 !== 1 && "grayscale(100%)"}} />
+                <img src={lethaltempo} className="w-12" style={{filter: props.lane1 !== 2 && "grayscale(100%)"}} />
+                <img src={fleetfootwork} className="w-12" style={{filter: props.lane1 !== 3 && "grayscale(100%)"}} />
+                <img src={conqueror} className="w-12" style={{filter: props.lane1 !== 4 && "grayscale(100%)"}} />
+              </div>)
+            }
+              <div className="flex justify-evenly my-5">
+                <img src={absorblife} className="w-10" style={{filter: props.lane2 !== 1 && "grayscale(100%)"}} />
+                <img src={triumph} className="w-10" style={{filter: props.lane2 !== 2 && "grayscale(100%)"}} />
+                <img src={fleetfootwork} className="w-10" style={{filter: props.lane2 !== 3 && "grayscale(100%)"}} />
+              </div>
+              <div className="flex justify-evenly my-5">
+                <img src={alcacrity} className="w-10" style={{filter: props.lane3 !== 1 && "grayscale(100%)"}} />
+                <img src={haste} className="w-10" style={{filter: props.lane3 !== 2 && "grayscale(100%)"}} />
+                <img src={bloodline} className="w-10" style={{filter: props.lane3 !== 3 && "grayscale(100%)"}} />
+              </div>
+              <div className="flex justify-evenly my-5">
+                <img src={coupdegrace} className="w-10" style={{filter: props.lane4 !== 1 && "grayscale(100%)"}} />
+                <img src={cutdown} className="w-10" style={{filter: props.lane4 !== 2 && "grayscale(100%)"}} />
+                <img src={laststand} className="w-10" style={{filter: props.lane4 !== 3 && "grayscale(100%)"}} />
+              </div>
+            </div>
+            { !props.isMainPath &&
+            <div className="flex flex-col gap-5 mt-5">
+              <div className="flex justify-evenly">
+                <img src={adaptiveforce} className="w-5" />
+                <img
+                  src={attackspeed}
+                  className="w-5"
+                  style={{ filter: "grayscale(0%)" }}
+                />
+                <img
+                  src={abilityhaste}
+                  className="w-5"
+                  style={{ filter: "grayscale(100%)" }}
+                />
+              </div>
+              <div className="flex justify-evenly">
+                <img src={adaptiveforce} className="w-5" />
+                <img
+                  src={movespeed}
+                  className="w-5"
+                  style={{ filter: "grayscale(100%)" }}
+                />
+                <img
+                  src={healthscaling}
+                  className="w-5"
+                  style={{ filter: "grayscale(100%)" }}
+                />
+              </div>
+              <div className="flex justify-evenly">
+                <img
+                  src={health}
+                  className="w-5"
+                  style={{ filter: "grayscale(100%)" }}
+                />
+                <img
+                  src={tenacity}
+                  className="w-5"
+                  style={{ filter: "grayscale(100%)" }}
+                />
+                <img src={healthscaling} className="w-5" />
+              </div>
+            </div>
+        }
+          </div>
+    )
+}
+
+export function ResolveComponent(props) {
+    return(
+        <div className="flex flex-col w-[45%] max-w-xs mt-1">
+            <div className="flex gap-3 items-center mb-5 mx-auto">
+              <img src={resolve} className="w-12 inline" />
+              <span className="font-bold">Resolve</span>
+            </div>
+            <div className="flex-col items-center">
+            { props.isMainPath &&
+              (<div className="flex gap-5 justify-between my-5">
+                <img src={graspofundying} className="w-12" style={{filter: props.lane1 !== 1 && "grayscale(100%)"}} />
+                <img src={aftershock} className="w-12" style={{filter: props.lane1 !== 2 && "grayscale(100%)"}} />
+                <img src={guardian} className="w-12" style={{filter: props.lane1 !== 3 && "grayscale(100%)"}} />
+              </div>)
+            }
+              <div className="flex justify-evenly my-5">
+                <img src={demolish} className="w-10" style={{filter: props.lane2 !== 1 && "grayscale(100%)"}} />
+                <img src={fontoflife} className="w-10" style={{filter: props.lane2 !== 2 && "grayscale(100%)"}} />
+                <img src={shieldbash} className="w-10" style={{filter: props.lane2 !== 3 && "grayscale(100%)"}} />
+              </div>
+              <div className="flex justify-evenly my-5">
+                <img src={conditioning} className="w-10" style={{filter: props.lane3 !== 1 && "grayscale(100%)"}} />
+                <img src={secondwind} className="w-10" style={{filter: props.lane3 !== 2 && "grayscale(100%)"}} />
+                <img src={boneplating} className="w-10" style={{filter: props.lane3 !== 3 && "grayscale(100%)"}} />
+              </div>
+              <div className="flex justify-evenly my-5">
+                <img src={overgrowth} className="w-10" style={{filter: props.lane4 !== 1 && "grayscale(100%)"}} />
+                <img src={revitalize} className="w-10" style={{filter: props.lane4 !== 2 && "grayscale(100%)"}} />
+                <img src={unfliching} className="w-10" style={{filter: props.lane4 !== 3 && "grayscale(100%)"}} />
+              </div>
+            </div>
+
+            { !props.isMainPath &&
+            <div className="flex flex-col gap-5 mt-5">
+              <div className="flex justify-evenly">
+                <img src={adaptiveforce} className="w-5" />
+                <img
+                  src={attackspeed}
+                  className="w-5"
+                  style={{ filter: "grayscale(0%)" }}
+                />
+                <img
+                  src={abilityhaste}
+                  className="w-5"
+                  style={{ filter: "grayscale(100%)" }}
+                />
+              </div>
+              <div className="flex justify-evenly">
+                <img src={adaptiveforce} className="w-5" />
+                <img
+                  src={movespeed}
+                  className="w-5"
+                  style={{ filter: "grayscale(100%)" }}
+                />
+                <img
+                  src={healthscaling}
+                  className="w-5"
+                  style={{ filter: "grayscale(100%)" }}
+                />
+              </div>
+              <div className="flex justify-evenly">
+                <img
+                  src={health}
+                  className="w-5"
+                  style={{ filter: "grayscale(100%)" }}
+                />
+                <img
+                  src={tenacity}
+                  className="w-5"
+                  style={{ filter: "grayscale(100%)" }}
+                />
+                <img src={healthscaling} className="w-5" />
+              </div>
+            </div>
+        }
+
+          </div>
+    )
+} 
