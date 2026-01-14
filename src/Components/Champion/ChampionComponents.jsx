@@ -9,7 +9,7 @@ import jungle from "../../role-img/jg.png";
 
 
 
-import { PrecisionComponent, ResolveComponent, DominationComponent } from "./Rune.jsx";
+import { PrecisionComponent, ResolveComponent, DominationComponent, SorceryComponent } from "./Rune.jsx";
 
 export function Aatrox() {
   const [clickedItem, setClickedItem] = useState(0);
