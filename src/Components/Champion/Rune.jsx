@@ -88,6 +88,19 @@ import absolutefocus from "../../rune-png/52px-Absolute_Focus_rune.png"
 import scorch from "../../rune-png/52px-Scorch_rune.png"
 import waterwalking from "../../rune-png/52px-Waterwalking_rune.png"
 import gatheringstorm from "../../rune-png/52px-Gathering_Storm_rune.png"
+import inspiration from "../../rune-png/Inspiration_icon.webp";
+import glacialaugment from "../../rune-png/Glacial_Augment_rune.webp";
+import unsealedspellbook from "../../rune-png/Unsealed_Spellbook_rune.webp";
+import firststrike from "../../rune-png/First_Strike_rune.webp";
+import hextechflashtraption from "../../rune-png/Hextech_Flashtraption_rune.webp";
+import magicalfootwear from "../../rune-png/Magical_Footwear_rune.webp";
+import cashback from "../../rune-png/Cash_Back_rune.webp";
+import tripletonic from "../../rune-png/Triple_Tonic_rune.webp";
+import timewarptonic from "../../rune-png/Time_Warp_Tonic_rune.webp";
+import biscuitdelivery from "../../rune-png/Biscuit_Delivery_rune.webp";
+import cosmicinsight from "../../rune-png/Cosmic_Insight_rune.webp";
+import approachvelocity from "../../rune-png/Approach_Velocity_rune.webp";
+import jackofalltrades from "../../rune-png/Jack_of_All_Trades_rune.webp";
 
 
 
@@ -430,6 +443,97 @@ export function DominationComponent(props) {
 }
 
 export function SorceryComponent(props) {
+  return (
+    <div className="flex flex-col w-[45%] max-w-xs mt-1">
+      <div className="flex gap-3 items-center mb-5 mx-auto">
+        <img src={sorcery} className="w-12 inline" />
+        <span className="font-bold">Sorcery</span>
+      </div>
+      <div className="flex-col items-center">
+        {props.isMainPath && (
+          <div className="flex gap-5 justify-evenly my-5">
+            <img
+              src={summonaery}
+              className="w-12"
+              style={{ filter: props.lane1 !== 1 && "grayscale(100%)" }}
+            />
+            <img
+              src={arcanecomet}
+              className="w-12"
+              style={{ filter: props.lane1 !== 2 && "grayscale(100%)" }}
+            />
+            <img
+              src={phaserush}
+              className="w-12"
+              style={{ filter: props.lane1 !== 3 && "grayscale(100%)" }}
+            />
+          </div>
+        )}
+        <div className="flex justify-evenly my-5">
+          <img
+            src={axiomarcanist}
+            className="w-10"
+            style={{ filter: props.lane2 !== 1 && "grayscale(100%)" }}
+          />
+          <img
+            src={manaflowband}
+            className="w-10"
+            style={{ filter: props.lane2 !== 2 && "grayscale(100%)" }}
+          />
+          <img
+            src={nimbuscloak}
+            className="w-10"
+            style={{ filter: props.lane2 !== 3 && "grayscale(100%)" }}
+          />
+        </div>
+        <div className="flex justify-evenly my-5">
+          <img
+            src={transcendence}
+            className="w-10"
+            style={{ filter: props.lane3 !== 1 && "grayscale(100%)" }}
+          />
+          <img
+            src={celerity}
+            className="w-10"
+            style={{ filter: props.lane3 !== 2 && "grayscale(100%)" }}
+          />
+          <img
+            src={absolutefocus}
+            className="w-10"
+            style={{ filter: props.lane3 !== 3 && "grayscale(100%)" }}
+          />
+        </div>
+        <div className="flex justify-evenly my-5">
+          <img
+            src={scorch}
+            className="w-10"
+            style={{ filter: props.lane4 !== 1 && "grayscale(100%)" }}
+          />
+          <img
+            src={waterwalking}
+            className="w-10"
+            style={{ filter: props.lane4 !== 2 && "grayscale(100%)" }}
+          />
+          <img
+            src={gatheringstorm}
+            className="w-10"
+            style={{ filter: props.lane4 !== 3 && "grayscale(100%)" }}
+          />
+        </div>
+      </div>
+
+      {!props.isMainPath && 
+      <Shard 
+            lane1={props.p1}
+            lane2={props.p2}
+            lane3={props.p3}
+      />
+      }
+    </div>
+  );
+}
+
+export function InspirationComponent(props) {
   return (
     <div className="flex flex-col w-[45%] max-w-xs mt-1">
       <div className="flex gap-3 items-center mb-5 mx-auto">
